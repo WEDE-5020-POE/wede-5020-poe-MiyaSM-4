@@ -25,33 +25,69 @@
     <main>
         <h1>Book Your Appointment</h1>
         <p>Ready to experience the luxury of SM Luxury Hair Salon? Book your appointment today and let our expert stylists take care of your hair needs.</p>
+       
         <section>
             <!--NN-->
         <form action=" BOOKING-Handler.php"method="POST" id="bookingForm"img\mysitemap.png>
             <fieldset>
                 <Legend> Clinent Information</Legend>
                  <label for="Full Names">Full Names:</label>
-                 <input type="text"id="Full Names" Full Names="Full Names">
+                 <input type="text"id="Full Names" Full Names="Full Names"><br><br>
 
                  <label for="Email">Email:</label>
-                 <input type="text"id="Email"Email;="Email">
+                 <input type="text"id="Email"Email;="Email"><br><br>
 
                  <label for="Phone Number">Phone number:</label>
-                 <input type="text"id="Phone Number" Phone Number="Phone Number"><br>
-                 
+                 <input type="text"id="Phone Number" Phone Number="Phone Number"><br><br>
+
                 <fieldset>
                     
                 <label for="What type of servers would you like ">What type of servers would you like :</label>
-                 <input type="What type of servers would you like text"id="What type of servers would you like " What type of servers would you like ="What type of servers would you like "><br>
+                 <input type="What type of servers would you like text"id="What type of servers would you like " What type of servers would you like ="What type of servers would you like "><br><br>
                  <label for="Phone Number">Phone number:</label>
-                 <input type="text"id="Phone Number" Phone Number="Phone Number">
+                 <input type="text"id="Phone Number" Phone Number="Phone Number"><br>
 
+                 <label for="prefered time">Prefered Time:</label>
+                 <select for ="prefered time"id="prefered time" prefered time="prefered time">
+                    
+                    <option value="">--Select a time--</option>
+                    <option value="9:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">11:00 AM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option><br>
+                </select>
+                 
 
-                </fieldset>
+                <label for="Notes">additional information/ special reqests:</label><br><br>
+                <textarea id="Notes" name="Notes" rows="5" cols="110" required></textarea><br>
 
+                 
 
             </fieldset>
+            <button type="submit">Book Now</button>
         </form>
+        </main>
+        <footer>
+          <footer>
+        <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>   
+        <nav>
+        <ul>
+            <a href="#index.html">Home</a></li>
+            <a href="#About.html">About</a></li>
+            <a href="#Services.html">Services</a></li>
+            <a href="#Booking.html">Booking</a></li>
+            <a href="#Contact.html">Contact</a></li>
+
+        </nav>
+        </footer>
+            
+        
         
     
 </body>
