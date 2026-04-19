@@ -7,11 +7,11 @@ SM Luxury Hair salon
 
 ## Project Overview
 
-SM Luxury is a small business established to provide a high-end grooming experience for busy professionals   .We aim to develop from traditional pen- and-paper operation which a lot of salons uses to a digital system. SM luxury focuses on solving industrial problems like the “empty chair” problem was “unscheduled gaps lead to loss in revenue “(Thriving Stylist, 2025).<br>
+SM Luxury is a small business established to provide a high-end grooming experience for busy professionals   .We aim to develop from traditional pen- and-paper operation which a lot of salons uses to a digital system. SM luxury focuses on solving industrial problems like the “empty chair” problem was “unscheduled gaps lead to loss in revenue “(Thriving Stylist, 2025).<br><br>
 Mission and Vision<br>
-Our mission is to create a Luxury escape for clients no pricing confusions and provide a modern presence 
-Target Audience <br>        
-Busy professionals and parents want a luxury escape without the stress of difficult booking.                                                                                                                                   
+Our mission is to create a Luxury escape for clients no pricing confusions and provide a modern presence<br> 
+Target Audience <br>Busy professionals and parents want a luxury escape without the stress of difficult booking. 
+                                                                                                                                  
 
 
 
@@ -27,11 +27,13 @@ Goal
 
 ## Timeline and Milestones
 
-Milestone	         Description	                               Timeline / Due Date<br>
-Project Proposals	Selection and drafting of the two initial project proposals.	Completed<br>
-Lecturer Approval	Feedback and formal sign-off on the chosen direction.	11/04/2026<br>
-Research & Assets	Gathering high-quality images and drafting site copy.	Week 3<br>
-HTML Development	Building the core structure and coding individual pages.	Week 4<br>
+Proposal 	Start with the two proposals	Week1<br>
+approval from Lecturer	Due 11/04/2026<br>
+Research & Assets	Sourcing images and writing content Week3<br>
+HTML Development	Create html for each pages Week4<br>
+Submission of part 1	Due 20/04/2026<br>
+	
+
 
 
 ## Sitemap
