@@ -10,7 +10,7 @@ SM Luxury is a small business established to provide a high-end grooming experie
 
 Mission <br>
 Our mission is to create a Luxury escape for clients no pricing confusions and provide a modern presence<br>
-Target Audience                                                                                                                         Busy professionals and parents who want a luxury escape without the stress of difficult booking.
+Target Audience<br>                                                                                                                      Busy professionals and parents who want a luxury escape without the stress of difficult booking.
 
 
 
