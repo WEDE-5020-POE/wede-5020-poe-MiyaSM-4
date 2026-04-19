@@ -7,7 +7,7 @@ SM Luxury Hair salon
 
 ## Project Overview
 
-SM Luxury is a small business established to provide a high-end grooming experience for busy professionals   .We aim to develop from traditional pen- and-paper operation which a lot of salons uses to a digital system. SM luxury focuses on solving industrial problems like the “empty chair” problem was “unscheduled gaps lead to loss in revenue “(Thriving Stylist, 2025).
+
 
 
 
