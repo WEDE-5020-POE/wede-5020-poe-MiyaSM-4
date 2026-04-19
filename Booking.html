@@ -23,13 +23,16 @@
     </header>
 
     <main>
+        <section>
         <h1>Book Your Appointment</h1>
         <p>Ready to experience the luxury of SM Luxury Hair Salon? Book your appointment today and let our expert stylists take care of your hair needs.</p>
-       
+       </section>
+
+        <!--A form for booking appointments-->
         <section>
             <!--code sorced from w3schools-->
-            <!--A form for booking appointments-->
-        <form action=" BOOKING-Handler.php"method="POST" id="bookingForm">
+
+        <form action=" BOOKING-Handler .php" method="POST" id="bookingForm">
             <fieldset> 
                 <Legend><h2>Client Information</h2></Legend>
                  <label for="Full_Names">Full Names:</label>
@@ -45,11 +48,9 @@
                     
                 <label for="Service-type">Service-type :</label>
                  <input type="text" id="Service-type" name="Service-type"><br><br>
-                 <label for="Phone-Number">Phone number:</label>
-                 <input type="text" id="Phone-Number" name="Phone-Number"><br><br>
-
-                 <label for="prefered_time">Prefered Time:</label>
-                 <select for ="prefered_time"id="prefered_time" name="prefered_time">
+                 
+                 <label for="prefered_time">Choose a Prefered Time:</label>
+                 <select id ="prefered_time"name="prefered_time" required>
                     //code scorced from (w3schools,2026)
                     <option value="">--Select a time--</option>
                     <option value="9:00">9:00 AM</option>
@@ -62,14 +63,13 @@
                     <option value="17:00">5:00 PM</option>
                     <option value="18:00">6:00 PM</option>
                     <option value="19:00">7:00 PM</option><br>
-                </select>
-                 
-
-                <label for="Notes">additional_information/special_reqests:</label><br><br>
+         </select>
+               <label for="Notes">additional_information/special_reqests:</label><br><br>
                 <textarea id="Notes" name="Notes" rows="5" cols="110" required></textarea><br>
-
-                <br> <button type="submit">Book Now</button> 
-            </fieldset>
+                <br> 
+                <button type="submit">Book Now</button> 
+        </section>
+           </fieldset> 
             
            
         </form>
