@@ -27,7 +27,12 @@ Goal
 
 ## Timeline and Milestones
 
-Pull this from your project proposal.
+Milestone	         Description	                               Timeline / Due Date<br>
+Project Proposals	Selection and drafting of the two initial project proposals.	Completed<br>
+Lecturer Approval	Feedback and formal sign-off on the chosen direction.	11/04/2026<br>
+Research & Assets	Gathering high-quality images and drafting site copy.	Week 3<br>
+HTML Development	Building the core structure and coding individual pages.	Week 4<br>
+
 
 ## Sitemap
 
