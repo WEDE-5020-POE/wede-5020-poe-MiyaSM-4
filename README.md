@@ -31,7 +31,7 @@ Pull this from your project proposal.
 
 ## Sitemap
 
-![Website Sitemap]img\sitemape.png <br> 
+![Website Sitemap](img\sitemape.png) <br> 
 
 ## References
 
