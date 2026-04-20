@@ -49,6 +49,7 @@ Submission of part 1	Due 20/04/2026<br>
 ## References
 
 Host Africa (2026) Web hosting in South Africa. Available at: https://hostafrica.co.za/web-hosting/ (Accessed: 11 April 2026)<br>
+W3Schools (2026) HTML  Tag. Available at: https://www.w3schools.com/tags/tag_option.asp (Accessed: 20 April 2026).<br>
 Thriving Stylist (2025) Unexpected challenges salon owner’s face. Available at: https://thrivingstylist.com/blog/unexpected-challenges-salon-owners-face/ (Accessed: 5 April 2026)    
 
   
