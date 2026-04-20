@@ -44,7 +44,7 @@ Submission of part 1	Due 20/04/2026<br>
 
 ## Sitemap
 
-![Website Sitemap](img/my-site-map.png) <br> 
+![Website Sitemap](img/my-sitemap.png) <br> 
 
 ## References
 
