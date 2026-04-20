@@ -12,10 +12,10 @@ Mission and Vision<br>
 Our mission is to create a Luxury escape for clients no pricing confusions and provide a modern presence<br> 
 Target Audience <br>Busy professionals and parents want a luxury escape without the stress of difficult booking.<br>
 Budget Estimate as per Host Africa(2026)<br><br>
-•	Web Hosting: R99.00 per month <br>
-•	Maintenance: R200.00 per month<br>
-•	Total Monthly Cost: R299.00<br>
-•	Total Annual Cost: R3,588.00<br>
+	Web Hosting: R99.00 per month <br>
+    Maintenance: R200.00 per month<br>
+	Total Monthly Cost: R299.00<br>
+	Total Annual Cost: R3,588.00<br>
 
                                                                                                                                   
 
@@ -26,9 +26,9 @@ Budget Estimate as per Host Africa(2026)<br><br>
 ## Website Goals and Objectives
 
 Goal
-•	Our goal is to create an online booking system to reduce empty chair problems
-•	Provide  transparency by displaying all style costs
-•	Enhance brand by though sites like Facebook,  Instagram, tick tock and  X
+Our goal is to create an online booking system to reduce empty chair problems<br>
+Provide  transparency by displaying all style costs<br>
+Enhance brand by though sites like Facebook,  Instagram, tick tock and  X<br>
 
 
 ## Timeline and Milestones
@@ -44,7 +44,7 @@ Submission of part 1	Due 20/04/2026<br>
 
 ## Sitemap
 
-![Website Sitemap](img/sitemape.png) <br> 
+![Website Sitemap](img/my-site-map.png) <br> 
 
 ## References
 Afrochic Beauty (n.d.) Passion Twist Hair. Available at: https://afrochicbeauty.com/passion-twist-hair/ (Accessed: 20 April 2026).<br><br>
