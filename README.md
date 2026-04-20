@@ -11,7 +11,7 @@ SM Luxury is a small business established to provide a high-end grooming experie
 Mission and Vision<br>
 Our mission is to create a Luxury escape for clients no pricing confusions and provide a modern presence<br> 
 Target Audience <br>Busy professionals and parents want a luxury escape without the stress of difficult booking.<br>
-Budget Estimate as per (Host Africa,2026)<br>
+Budget Estimate as per (Host Africa,2026)<br><br>
 •	Web Hosting: R99.00 per month <br>
 •	Maintenance: R200.00 per month<br>
 •	Total Monthly Cost: R299.00<br>
@@ -44,7 +44,7 @@ Submission of part 1	Due 20/04/2026<br>
 
 ## Sitemap
 
-![Website Sitemap](img\sitemape.png) <br> 
+![Website Sitemap](img/sitemape.png) <br> 
 
 ## References
 
