@@ -35,10 +35,10 @@ Contact: were you‘ll find the business contact information.<br>
 
 ## Website Goals and Objectives
 
-Goal
-Our primary goal is to create an online booking system to reduce empty chair problems
-objectives
-Objective 1 is to reduce empty time slots by at least 20% in the next 3 months
+Goal<br>
+Our primary goal is to create an online booking system to reduce empty chair problems<br>
+objectives<br>
+Objective 1 is to reduce empty time slots by at least 20% in the next 3 months<br>
 Objective 2 ensure that all the hair styles’ costs are visible ensuring transparency
 
 
