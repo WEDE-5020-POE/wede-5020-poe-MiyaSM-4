@@ -33,12 +33,15 @@ Enhance brand by though sites like Facebook,  Instagram, tick tock and  X<br>
 
 ## Timeline and Milestones
 
-Proposal 	Start with the two proposals	Week1<br>
-approval from Lecturer	Due 11/04/2026<br>
-Research & Assets	Sourcing images and writing content Week3<br>
-HTML Development:	Create html for each pages Week4<br>
-Submission of part 1	Due 20/04/2026<br>
-	
+Week1 Project Proposal:  Develop two proposals<br>   
+Week2 (11/04/2027):  Lecture Approval | Get feedback from Lecture <br>
+Week3 Research & asset | Source images and write content   <br>                                                                                                             
+Week4: HTML Development| Develop a HTML site:<br> 
+ Week5:(20/04/2026) Submission of part1<br>
+Week7: CCS styling and desktop solution<br>
+Week8: Responsive design| ensure site is responsive and well developed<br>
+Week9: (29/05/2026) submission of part2
+
 
 
 
