@@ -6,7 +6,7 @@ This project follows Semantic Versioning.
 
 ## [1.0.0] 
 ### Added
-- xyz
+- linked my pages to the styless.css
 
 ### Changed
 - xyz
