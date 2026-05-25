@@ -8,7 +8,8 @@ This project follows Semantic Versioning.
 ### Added
 - linked my pages to the styless.css
 - Added a image showing various hairstyles to the home page so the first thing clients see is a slideshow of various hair styles we proved
-- Added an active page tracking mechanism using class="current Page" to highlight the user's current location in the navigation menu. 
+- Added an active page tracking mechanism using class="current Page" to highlight the user's current location in the navigation menu.
+- Since my business main colours are blue and purple i decided to create a background of the mixture of the two with a little colour change i bebelive the colour change will bring live to the site
 
 ### Changed
 - xyz
