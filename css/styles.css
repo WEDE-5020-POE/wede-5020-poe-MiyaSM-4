@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3a0e58; /* Fallback color while gradient loads */
+}
+
+/* main boady*/
+body {
+    background: linear-gradient(135deg, #713c94, #614caf, #3d1666, #1c3561);/*the companies colour is blue and purple so the background will have a colour shift of sifferent shades of the two coulors together*/
+    background-size: 300% 300%;
+    animation: slowBackgroundShift 16s ease-in-out infinite;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+}
+
+@keyframes slowBackgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} 
+
+
