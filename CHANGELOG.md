@@ -7,6 +7,7 @@ This project follows Semantic Versioning.
 ## [1.0.0] 
 ### Added
 - linked my pages to the styless.css
+- Added a image showing various hairstyles to the home page so the first thing clients see is a slideshow of various hair styles we proved 
 
 ### Changed
 - xyz
