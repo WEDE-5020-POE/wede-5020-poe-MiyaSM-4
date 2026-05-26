@@ -15,7 +15,7 @@ This project follows Semantic Versioning.
 - xyz
 
 ### Fixed
-- xyz
+-changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it
 
 ## Semantic Versioning
 
