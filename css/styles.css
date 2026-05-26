@@ -64,6 +64,25 @@ header {
     color: #ffd700;
     /*yellow color is to hight the golden experence promised to our clients*/
 }
+nav ul {
+    list-style: none;/*   remove the bullet points from the navigation */
+    display: flex;/* <-- align the links horizontally side-by-side */
+    gap: 2.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37;/* A rich gold color for hover effect */
+}
 
 
 
