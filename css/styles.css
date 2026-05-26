@@ -21,10 +21,27 @@ body {
     line-height: 1.6;
 }
 
+
 @keyframes slowBackgroundShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 } 
+/* * Create a modern, "frosted glass" header.
+ * - Flexbox layout aligns logo/links to opposite sides and centers them vertically.
+ * - Semi-transparent dark background with a 10px blur effect on content behind it.
+ * - Max-width of 1200px with custom inner padding.
+ */
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1.5rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
 
 
