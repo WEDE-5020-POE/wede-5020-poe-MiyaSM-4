@@ -18,6 +18,8 @@ This project follows Semantic Versioning.
 - Decided to add serves preview setion to my home page
 - Created .split-section class utilizing Flexbox to align text and images elegantly.
 - Styled imagery with custom dimensions, cover fitting, and shadows for a premium aesthetic.
+- style: upgrade contact form to a premium, responsive design
+- Added professional spacing, CSS grid rows, and smooth transition effects to the form elements.
 
 
 ### Changed
