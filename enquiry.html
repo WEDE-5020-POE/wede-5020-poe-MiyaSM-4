@@ -29,52 +29,43 @@
         <p>Ready to experience the luxury of SM Luxury Hair Salon? Book your appointment today and let our expert stylists take care of your hair needs.</p>
        </section>
 
-        <!--A form for booking appointments if one would like our services-->
-        <section>
-            <!--Code sorced from w3shcools(2026)-->
+        <!-- RIGHT SIDE: Contact Form -->
+        <div class="contact-form">
+            <h2 class="section-title">Send us a message</h2>
             
-        <form action=" BOOKING-Handler.php" method="POST" id="bookingForm">
-            <fieldset> 
-                <Legend><h2>Client Information</h2></Legend>
-                 <label for="Full_Names">Full Names:</label>
-                 <input type="text" id="Full_Names" name="Full_Names"><br><br>
+            <form action="/action_page.php" method="get">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Surname">Surname:</label>
+                        <input type="text" id="Surname" name="Surname" required>
+                    </div>
+                </div>
 
-                 <label for="Email">Email:</label>
-                 <input type="text" id="Email" name="Email"><br><br>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Email">Email:</label>
+                        <input type="email" id="Email" name="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone-Number">Phone Number:</label>
+                        <input type="tel" id="Phone-Number" name="Phone-Number" required>
+                    </div>
+                </div>
 
-                 <label for="Phone-Number">Phone-number:</label>
-                 <input type="text" id="Phone-Number" name="Phone-Number"><br><br>
+                <div class="form-group">
+                    <label for="Message">Your Message:</label>
+                    <textarea id="Message" name="Message" rows="5" required></textarea>
+                </div>
 
-                
-                    
-                <label for="Service-type">Service-type :</label>
-                 <input type="text" id="Service-type" name="Service-type"><br><br>
-                 
-                 <label for="prefered_time">Choose a Prefered Time:</label>
-                 <select id ="prefered_time" name="prefered_time" required>
-                   <!--code sorced from w3school(2026)-->
-                    <option value="">--Select a time--</option>
-                    <option value="9:00">9:00 AM</option>
-                    <option value="10:00">10:00 AM</option>
-                    <option value="11:00">11:00 AM</option>
-                    <option value="13:00">1:00 PM</option>
-                    <option value="14:00">2:00 PM</option>
-                    <option value="15:00">3:00 PM</option>
-                    <option value="16:00">11:00 AM</option>
-                    <option value="17:00">5:00 PM</option>
-                    <option value="18:00">6:00 PM</option>
-                    <option value="19:00">7:00 PM</option>
-         </select>
-         <!--additional information is for when the client sencetive hair deteails and
-          what they might like to add to there hair stlye they choose-->
-               <br><label for="Notes">additional_information/special_reqests:</label><br><br>
-                <textarea id="Notes" name="Notes" rows="5" cols="110" required></textarea><br>
-                <br> 
-                <button type="submit">Book Now</button> 
-        
-           </fieldset> 
-        </form>
-        </section>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
     </main>
         <footer>
          
