@@ -13,7 +13,7 @@ html, body {
 body {
     background: linear-gradient(135deg, #713c94, #614caf, #3d1666, #1c3561);/*the companies colour is blue and purple so the background will have a colour shift of sifferent shades of the two coulors together*/
     background-size: 300% 300%;
-    animation: slowBackgroundShift 16s ease-in-out infinite;
+    animation: slowBackgroundShift 16s;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -83,6 +83,76 @@ nav a {
 nav a:hover {
     color: #d4af37;/* A rich gold color for hover effect */
 }
+main {
+    width: 90%;            /* Takes up 90% of the screen width on smaller devices */
+    max-width: 1100px;           
+    margin: 2rem auto;             
+    flex-direction: column;        /* Stacks the child elements (sections) vertically in a column */
+    gap: 2rem;                     
+}
+/* Contnet section (FROSTED GLASS EFFECT)*/
+section {
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/*ensuring my headings have a readeble font*/
+section h2 {
+    font-family: 'Playfair Display', 'Georgia', serif;  /* Elegant font choice for a high-end look */
+    font-size: 2.2rem;                    /* Makes the section headings stand out clearly */
+    font-weight: 400;                    
+    letter-spacing: 1px;                  
+    color: #ffd700;                       /* Bright gold color to match the branding theme */
+    margin-bottom: 1.2rem;                /* Pushes the paragraph text below it down a bit */
+}
 
+/* Section Paragraphs */
+section p {
+    font-size: 1.1rem;                    /* Good, readable body text size */
+    color: #f1f5f9;                       /* Off-white color so it’s easy on the eyes against dark backgrounds */
+    margin-bottom: 1rem;                  /
+}
+
+
+footer {
+    width: 100%;                          
+    padding: 3rem 2rem 2rem 2rem;         
+    background: rgba(10, 5, 18, 0.5);     /* Dark, semi-transparent background to ground the page */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Faint line to separate footer from the main content */
+    text-align: center;                  
+    margin-top: auto;                     /* Flexbox trick to force footer to the absolute bottom of the page */
+}
+
+/* Footer Copyright Text */
+footer p {
+    font-size: 0.9rem;                    /* Slightly smaller text for secondary information */
+    color: #8a8f98;                       /* Muted gray so it sits quietly in the background */
+}
+
+/* Footer Nav Links Container */
+footer nav {
+    margin-top: 1.2rem;                   
+    display: flex;                        /* Flexbox to line up the links */
+    justify-content: center;              /* Centers the link row horizontally */
+    gap: 2rem;                           
+}
+
+/* Footer Links */
+footer nav a {
+    color: #8a8f98;                       /* Muted gray by default to match the copyright */
+    text-decoration: none;                
+    font-size: 0.85rem;                   /* Keeps the links small and subtle */
+    transition: color 0.2s ease;          /* Smooth transition animation for the hover effect */
+}
+
+/* Footer Hover State */
+footer nav a:hover {
+    color: #d4af37;            
+           /* Changes to a warm golden color when hovered*/
+}
 
 
