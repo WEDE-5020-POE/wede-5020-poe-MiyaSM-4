@@ -12,6 +12,7 @@ This project follows Semantic Versioning.
 - Since my business main colours are blue and purple i decided to create a background of the mixture of the two with a little colour change i bebelive the colour change will bring live to the site
 - Added a modern, frosted-glass header with responsive spacing and flexbox alignment
 - Created a logo section that perfectly aligns the icon and text with a custom gold glow and typography
+- Styled footer layout, typography, and nav hover effects
 
 ### Changed
 - xyz
