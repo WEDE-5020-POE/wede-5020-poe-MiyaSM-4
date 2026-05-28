@@ -154,5 +154,21 @@ footer nav a:hover {
     color: #d4af37;            
            /* Changes to a warm golden color when hovered*/
 }
+ /*Home  page*/
+ .btn {
+    display: block;/* would like the button to be centered and not inline */
+    width: fit-content;
+    margin: 1.5rem auto 2rem auto;
+    background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f8e49d 100%);
+    color: #0f061b;
+    text-decoration: none;/* Removes underline from links */
+    padding: 1rem 3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+}
 
 

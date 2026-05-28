@@ -14,6 +14,7 @@ This project follows Semantic Versioning.
 - Created a logo section that perfectly aligns the icon and text with a custom gold glow and typography
 - Styled footer layout, typography, and nav hover effects
 
+
 ### Changed
 - xyz
 
