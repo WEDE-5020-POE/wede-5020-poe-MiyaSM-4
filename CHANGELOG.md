@@ -18,7 +18,7 @@ This project follows Semantic Versioning.
 
 
 ### Changed
-- xyz
+- Changed text layout from paragraph with line breaks to a clean bulleted list for better readability
 
 ### Fixed
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it
