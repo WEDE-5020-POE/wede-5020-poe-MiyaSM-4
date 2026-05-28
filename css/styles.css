@@ -266,7 +266,68 @@ form button[type="submit"] {
     form {
         padding: 24px;
     }
+    
+    /*about page*/
+}
+.split-section {
+    display: flex;
+    flex-direction: row; /* Puts items side-by-side */
+    align-items: center; /* Vertically centers them */
+    gap: 2.5rem;
+    text-align: left; /* Overrides the default section center alignment */
 }
 
+.split-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Vision & Mission Image - Constrained & Clean */
+.split-section .vision-img {
+    width: 100%;
+    max-width: 320px;  
+    max-height: 420px; 
+    object-fit: cover; 
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    ;   
+}
+
+/* Team Grid Component Layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.team-card {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-bottom: 3px solid #d4af37; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.team-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 2px solid rgba(212, 175, 55, 0.5); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.team-card p {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    line-height: 1.5;
+    margin: 0;
+}
 
 
