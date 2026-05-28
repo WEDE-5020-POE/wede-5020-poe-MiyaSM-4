@@ -22,54 +22,85 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <!--contact page contails all the contact detealis  about SM luxury so clients know how to get intouch with them-->
-        <h1>Contact Us</h1>
-        <p>Have questions or want to schedule an appointment? Reach out to us!</p>
-     
-        <section>
-            <h2>Get in Touch</h2>
-            <p>Email: info@smLuxuryHairSalon.com</p>
-            <p>Phone: 082 974 6593</p>
-            <p>Address: 057 Qweens Street, Pretoria, 0122</p>
-        </section>
+    <h1>Contact Us</h1>
+    <p>Have questions or want to schedule an appointment? Reach out to us!</p>
+ <!-- -->
+    <div class="contact-container">
+        <!-- LEFT SIDE: Contact Info -->
+        <div class="contact-info">
+            <section>
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <p>info@smLuxuryHairSalon.com</p>
+                </div>
+                <div class="info-item">
+                    <strong>Phone:</strong>
+                    <p>082 974 6593</p>
+                </div>
+                <div class="info-item">
+                    <strong>Address:</strong>
+                    <p>057 Qweens Street, Pretoria, 0122</p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Hours of Operation</h2>
-            <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-            <p>Saturday: 10:00 AM - 6:00 PM</p>
-            <p>Sunday: Closed</p>
+            <section>
+                <h2>Hours of Operation</h2>
+                <div class="hours-item">
+                    <strong>Monday - Friday:</strong>
+                    <p>9:00 AM - 8:00 PM</p>
+                </div>
+                <div class="hours-item">
+                    <strong>Saturday:</strong>
+                    <p>10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="hours-item">
+                    <strong>Sunday:</strong>
+                    <p>Closed</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- RIGHT SIDE: Contact Form -->
+        <div class="contact-form">
+            <h2 class="section-title">Send us a message</h2>
             
-        </section>
-       
-        <h2> send us a messasage</h2>
+            <form action="/action_page.php" method="get">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Surname">Surname:</label>
+                        <input type="text" id="Surname" name="Surname" required>
+                    </div>
+                </div>
 
-        <!--contact pages were clients can log in a request share 
-        information ideas or if they want to invest  -->
-        
-        <Form action="/action_page.php" method="get">
-        <label for="Name">Name:</label>
-        <input type="text" id="Name" name="Name" required><br><br>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Email">Email:</label>
+                        <input type="email" id="Email" name="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone-Number">Phone Number:</label>
+                        <input type="tel" id="Phone-Number" name="Phone-Number" required>
+                    </div>
+                </div>
 
-        <label for="Surname">Surname: </label>
-        <input type="text" id="Surname" name="Surname" required><br><br>
+                <div class="form-group">
+                    <label for="Message">Your Message:</label>
+                    <textarea id="Message" name="Message" rows="5" required></textarea>
+                </div>
 
-        <Label for = "Email">Email:</Label>
-        <input type="text" id ="Email" name="Email" required><br><br>
-
-         <Label for = "Phone-Number">Phone-number:</Label>
-        <input type="text" id ="Phone-Number" name="Phone-Number" required><br><br>
-
-        <label For="Message">Your Message:</label><br>
-        <textarea id="Message" name="Message" rows="5" cols="100" required></textarea><br><br>
-    
-        <button type="submit">Submit</button>
-        
-        </Form>
-        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
     </main>
 
+   
     <footer>
         <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>
         <nav>
