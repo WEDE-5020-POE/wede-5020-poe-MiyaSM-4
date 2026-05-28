@@ -192,5 +192,81 @@ footer nav a:hover {
     border: 1px solid rgba(255, 255, 255, 0.1);
        
 }
+/* Booking Form Styles */
+form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+form textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+.form-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+form button[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f9e49b 100%);
+    color: #0f051d;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    form {
+        padding: 24px;
+    }
+}
+
 
 
