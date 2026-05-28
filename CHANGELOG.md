@@ -19,6 +19,7 @@ This project follows Semantic Versioning.
 
 ### Changed
 - Changed text layout from paragraph with line breaks to a clean bulleted list for better readability
+- Redesigned the contact page layout to place business information on the left and the message form on the right.
 
 ### Fixed
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it
