@@ -13,6 +13,7 @@ This project follows Semantic Versioning.
 - Added a modern, frosted-glass header with responsive spacing and flexbox alignment
 - Created a logo section that perfectly aligns the icon and text with a custom gold glow and typography
 - Styled footer layout, typography, and nav hover effects
+- Centered button layout and updated gradient styling
 
 
 ### Changed
