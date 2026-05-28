@@ -180,8 +180,9 @@ footer nav a:hover {
 }
 .split-text {
     flex: 1;
-    min-width: 280px;
+    min-width: 280px;/* want that the  text box from squeezing too narrow on small screens */
 }
+
 .split-section .vision-img {
     width: 100%;
     max-width: 320px;  
