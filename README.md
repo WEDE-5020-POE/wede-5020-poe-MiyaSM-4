@@ -2,8 +2,8 @@
 SM Luxury Hair salon
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+**Student number:** ST10476380 <br>
+**Student Name:** Shumani Monyai
 
 ## Project Overview
 
