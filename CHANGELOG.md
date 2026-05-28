@@ -15,6 +15,8 @@ This project follows Semantic Versioning.
 - Styled footer layout, typography, and nav hover effects
 - Centered button layout and updated gradient styling
 - Decided to add serves preview setion to my home page
+- Created .split-section class utilizing Flexbox to align text and images elegantly.
+- Styled imagery with custom dimensions, cover fitting, and shadows for a premium aesthetic.
 
 
 ### Changed
