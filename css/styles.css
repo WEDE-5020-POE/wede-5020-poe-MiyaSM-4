@@ -258,7 +258,21 @@ form button[type="submit"] {
     border-radius: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+
 }
+form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+form button[type="submit"] svg {
+    transition: transform 0.3s ease;
+}
+
+form button[type="submit"]:hover svg {
+    transform: translate(3px, -3px);
+}
+
 @media (max-width: 600px) {
     .form-row {
         grid-template-columns: 1fr;
