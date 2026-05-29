@@ -29,6 +29,7 @@ This project follows Semantic Versioning.
   Styled the h2 header with a gold color scheme and a bottom border.
   add selectors for form input fields
  - form update:Added bottom margin to sections and removed margin from the last section to prevent awkward extra spacing.
+ - Standardized width, padding, borders, and radius for text, email, tel, and textarea fields of the contact form.Added a smooth transition effect on focus.
    
 
 
