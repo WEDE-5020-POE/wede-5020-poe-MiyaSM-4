@@ -16,10 +16,12 @@ Mission and Vision<br>
 Our mission is to create a luxury escape for clients without pricing confusion and to provide a modern presence<br>
 Vision statement<br>
 To be one of the top hair salons known for seamless booking and expert hair services
+
+
  
 Key features 
 Our website will include:<br>
-Home page: the homepage will contain images of a luxury hair design and a button for book now .<br>
+Home page: the homepage will a slide show imaje of a luxury hair design and a button for book now .<br>
 About US: about us page will tell the users more about SM luxury they will get to know the  hairstylists, what to expect and  SM luxury’s  vision and mission<br>
 Service: A gallery of all hairstyles including their prices.<br>
 Enquiry: will contain a Functional form for service inquiries or appointments.<br>
@@ -54,6 +56,10 @@ Week 8|Responsive design| ensure site is responsive and well developed<br>
 Week 9|(29/05/2026)|submission of part2<br>
 
 
+## website view
+Website on a laptop
+<img width="1896" height="932" alt="image" src="https://github.com/user-attachments/assets/703d03c5-6d4f-4291-8035-c031c41aead7" />
+Wbsite on a cell phone
 
 
 ## Sitemap
@@ -61,9 +67,10 @@ Week 9|(29/05/2026)|submission of part2<br>
 ![Website Sitemap](img/my-sitemap.png) <br> 
 
 ## References
-
+CSS Web Design Studio (2026) Fixing horizontal image stretching and mobile columns in CSS flexbox. Available at: https://www.cssdesignstudio.com/flexbox-gallery-fix (Accessed: 28 May 2026).
 Host Africa (2026) Web hosting in South Africa. Available at: https://hostafrica.co.za/web-hosting/ (Accessed: 11 April 2026)<br>
 W3Schools (2026) HTML  Tag. Available at: https://www.w3schools.com/tags/tag_option.asp (Accessed: 20 April 2026).<br>
-Thriving Stylist (2025) Unexpected challenges salon owner’s face. Available at: https://thrivingstylist.com/blog/unexpected-challenges-salon-owners-face/ (Accessed: 5 April 2026)    
+Thriving Stylist (2025) Unexpected challenges salon owner’s face. Available at: https://thrivingstylist.com/blog/unexpected-challenges-salon-owners-face/ 
+(Accessed: 5 April 2026)    
 
   
