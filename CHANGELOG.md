@@ -39,6 +39,9 @@ This project follows Semantic Versioning.
 ### Changed
 - Changed text layout from paragraph with line breaks to a clean bulleted list for better readability
 - Redesigned the contact page layout to place business information on the left and the message form on the right.
+- Updated the **About Us** page layout structure to use semantic section classes (`story-section`, `split-section`, `team-section`).
+- Restructured the **Vision and Mission** section on the about page into a side-by-side split layout, moving the main image to the left side.
+- Replaced the plain text team list on the about page with a responsive **Team Grid** layout using individual member profile cards (`team-card`).
 
 ### Fixed
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it
