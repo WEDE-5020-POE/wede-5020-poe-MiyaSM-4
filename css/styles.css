@@ -447,8 +447,45 @@ form button[type="submit"]:hover svg {
     resize: vertical;
     font-family: inherit;
 }
+.contact-form button[type="submit"] {
+    background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f9e49b 100%);
+    color: #0f051d;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
 
+.contact-form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
 
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
 
 
     /*about page*/
