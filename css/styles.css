@@ -280,6 +280,10 @@ form label {
     color: #333;
     font-size: 0.95rem;
 }
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
 form textarea {
     width: 100%;
     padding: 14px 16px;
@@ -290,6 +294,8 @@ form textarea {
     background-color: #fafafa;
     box-sizing: border-box;
 }
+form input:focus,
+form select:focus,
 form textarea:focus {
     outline: none;
     border-color: #d4af37;
@@ -344,6 +350,21 @@ form button[type="submit"]:hover svg {
         padding: 24px;
     }
     
+    /* Left Side - Contact Info */
+.contact-info {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2 {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+}
     /*about page*/
 }
 .split-section {
