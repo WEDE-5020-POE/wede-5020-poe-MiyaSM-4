@@ -75,7 +75,7 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -488,6 +488,9 @@ form button[type="submit"]:hover svg {
     background-color: #fafafa;
     box-sizing: border-box;
 }
+.contact-form{
+    background: linen;
+}
 
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -520,10 +523,12 @@ form button[type="submit"]:hover svg {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
-.contact-form{
-    border-top: 3px solid #d4af37;
-    background: linen;
+.contact-container h3 {
+    color: #000000;      
+    font-weight: bold;   /* Make the text bold */
+    font-size: 24px;     
 }
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .contact-container {
@@ -709,13 +714,25 @@ form button[type="submit"]:hover svg {
 
 .extra-images {
     display: flex;
-    gap: 10px;
+    flex-direction: row; /* Forces side-by-side layout */
+    gap: 10px;           /* Puts space between the images */
     justify-content: center;
     margin-top: 15px;
+    width: 100%;         /* Ensures it uses the full width of the card */
 }
 
 .extra-images img {
-    width: 48%;
+    flex: 1;             /* Forces images to share the space equally */
+    width: 0;            /* Trick to allow flex grow to calculate correctly */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.extra-images img {
+    flex: 1;             /* Forces images to share the space equally */
+    width: 0;            /* Trick to allow flex grow to calculate correctly */
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
