@@ -46,14 +46,16 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 
 
 ## Timeline and Milestones
-Week 1|Project Proposal| Develop two proposals <br>  
-Week 2 (11/04/2027)| Lecture Approval|Get feedback from Lecture <br>
-Week 3|Research & asset |	Source images and write content | view social media platforms  for more ideas<br> 
-Week 4|	HTML Development|Putting my plans into action by developing 5 sites using html <br>
-Week 5| (20/04/2026)|Submission of part1<br>
-Week 7|	CCS styling and desktop solution| Adding on to my HTML styling  and organizing my pages<br>
-Week 8|Responsive design| ensure site is responsive and well developed<br>
-Week 9|(29/05/2026)|submission of part2<br>
+| Timeline | Milestone | Key Deliverables & Activities |
+| :--- | :--- | :--- |
+| **Week 1** | Project Proposal | • Draft and develop two distinct website concepts and layout proposals. |
+| **Week 2** <br>*(11/04/2026)* | Lecture Approval | • Present proposals to the lecturer.<br>• Gather and document feedback for implementation. |
+| **Week 3** | Research & Asset Gathering | • Source high-quality images and draft core written content.<br>• Research social media platforms for design ideas and industry trends. |
+| **Week 4** | HTML Development | • Translate layouts into structural code.<br>• Build out the core 5 pages using semantic HTML. |
+| **Week 5** <br>*(20/04/2026)* | Milestone Submission | • **Submit Part 1** of the project assignment. |
+| **Week 7** | CSS Styling & Desktop Layout | • Implement comprehensive CSS styling.<br>• Organize page layouts and design the desktop viewport solution. |
+| **Week 8** | Responsive Design | • Implement media queries.<br>• Optimize fluid layouts to ensure full responsiveness across tablet and mobile displays. |
+| **Week 9** <br>*(29/05/2026)* | Final Submission | • **Submit Part 2** (Final polished web solution). |
 
 
 ## website view
