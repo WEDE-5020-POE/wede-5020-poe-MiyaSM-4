@@ -4,74 +4,46 @@ All notable changes to this project will be documented in this file.
 
 This project follows Semantic Versioning.
 
-## [1.0.0] 
+# 📝 Changelog
+
+All notable changes to this project are documented below following semantic versioning guidelines.
+
+---
+
+## [1.0.0] - 2026-05-29
 ### Added
-//////////////////
-- linked my pages to the **styless.css**
-- Added a image showing various hairstyles to the **home page** so the first thing clients see is a slideshow of various hair styles we proved
-- Added an active page tracking mechanism using class="current Page" to highlight the user's current location in the **navigation menus**.
-- Since my business main colours are blue and purple i decided to create a **background** of the mixture of the two with a little colour change i bebelive the colour change will bring live to the site
-- Added a modern, frosted-glass **header** with responsive spacing and flexbox alignment
-- Created a **logo** section that perfectly aligns the icon and text with a custom gold glow and typography
-- Styled **footer** layout, typography, and nav hover effects
-- Centered button layout and updated gradient styling on my **home pge**
-- Decided to add serves preview setion to my **home page**
-- Created .split-section class utilizing Flexbox to align text and images elegantly.
-- Styled imagery with custom dimensions, cover fitting, and shadows for a premium aesthetic.
-- style: upgrade **contact form** to a premium, responsive design
-- Added professional spacing, CSS grid rows, and smooth transition effects to the form elements on the **contact form**.
-- Configured a dynamic .team-grid utilizing repeat(auto-fit, minmax(...)) for organic mobile adjustments
-- add button hover states and responsive image/slideshow components
-- Created a responsive CSS Grid for team members using auto-fit and minmax.
-- Styled team cards with a dark translucent background, gold bottom border, and flex centering.
-- Formatted circular profile images with custom borders and shadows.
-- Added background, padding, and subtle shadow to the **contact info container**.
-  Styled the h2 header with a gold color scheme and a bottom border.
-  add selectors for form input fields
- - **form update**:Added bottom margin to sections and removed margin from the last section to prevent awkward extra spacing.
- - Standardized width, padding, borders, and radius for text, email, tel, and textarea fields of the contact form.Added a smooth transition effect on focus.
- - implemented a responsive media queries for my **forms**
- - Implemented a two-column CSS Grid layout for the **Contact Page** container to separate contact details and the interaction form cleanly.
- - **Interactive Gallery Features (Services Page):** Implemented `<details>` and `<summary>` drop-down toggles (`.gallery-toggle`) under each service card, allowing clients to view alternative angles and styles without cluttering the page.
-- **Enhanced Visual Assets:** Added placeholder paths for main and multi-angle gallery images for Box Braids, Cornrows, Twists, Crochet Braids, and Faux Locs.
-- Created the CSS architecture for a brand new, premium **Services Page**.
-- Implemented a modern **glassmorphism** visual style using `backdrop-filter: blur()` and subtle transparent borders.
-- Added a native **click-to-reveal gallery toggle** using CSS `@keyframes slideDown` for smooth dropdown animations.
-- Designed a sleek, gradient-styled CTA button (`.btn-book`) with responsive hover states.
-- added pictures of my team to the **about page** and removed **images** i used as prop
-- **CSS Styling:** Created `css/style.css` with the proposed purple & gold luxury theme, animated background, and glassmorphism effects.
-- **Gold Navigation:** Updated the header to be full-width with a gold gradient and black text for high contrast.
-- **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
-- **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
-- **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
-
-
-
+- **Services Page Architecture:** Built out a premium layout using modern glassmorphism components (`backdrop-filter: blur()`), translucent borders, and a responsive grid container (`.services-container`).
+- **Interactive Component Toggles:** Implemented native HTML5 `<details>` and `<summary>` dropdown blocks for inline multi-angle style showcases without cluttering user viewports.
+- **Micro-Animations:** Configured custom CSS `@keyframes slideDown` animations for smooth gallery transitions and interactive hover states on all `.btn-book` elements.
+- **Split Flexbox Component:** Developed a flexible `.split-section` utility module to gracefully arrange high-end feature content side-by-side with vertical alignment.
+- **Dynamic Team Grid Module:** Programmed a fluid card grid system driven by `repeat(auto-fit, minmax(220px, 1fr))` to display employee profiles natively across viewports.
+- **Profile Card Assets:** Added translucent layout foundations, circular image clips, profile images, and gold accent borders (`#d4af37`) highlighting active styling operators.
+- **Two-Column Contact Matrix:** Created a structural CSS Grid component organizing operational metadata blocks on the left alongside functional entry forms on the right.
+- **Advanced Layout Hygiene:** Standardized input box heights, focus rings, border-radii, and applied trailing sibling space control filters (`:last-child { margin-bottom: 0; }`).
+- **Media Queries:** Deployed responsive break-caps forcing column collapsing down to simple standard linear stacks below $900\text{px}$ and $600\text{px}$ breakpoints.
 
 ### Changed
-- Changed text layout from paragraph with line breaks to a clean bulleted list for better readability
-- Redesigned the contact page layout to place business information on the left and the message form on the right.
-- Updated the **About Us** page layout structure to use semantic section classes (`story-section`, `split-section`, `team-section`).
-- Restructured the **Vision and Mission** section on the about page into a side-by-side split layout, moving the main image to the left side.
-- Replaced the plain text team list on the about page with a responsive **Team Grid** layout using individual member profile cards (`team-card`).
-- **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
--  **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
-- **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
-- **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
+- **Services Refactoring:** Migrated generic markup blocks (`<article>`) into a dynamic card grid interface module (`.service-card`).
+- **Tiered Pricing Arrays:** Structuralized flat string service descriptions into detailed tiered lists sorting variations by length (Short, Medium, Long, Normal).
+- **Core Branding Scheme:** Applied high-contrast styling layers across the structural header element utilizing a sharp gold background gradient backed by crisp black text.
+- **About Component Realignment:** Upgraded page containers into explicit semantic boundaries (`.story-section`, `.split-section`, `.team-section`), floating the main identity image directly to the left panel.
+- **Data Display Cleanliness:** Transformed long textual descriptions containing messy line breaks into highly scannable bullet configurations.
 
 ### Fixed
--changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.          Fixed missing closing brace in **media query** breaking the **contact page grid**.
-- Cleaned up broken **CSS property** syntax and consolidated duplicate design rules.
-- - Corrected broken image paths and inconsistent file extensions
-- **CSS Styling:** Created `css/style.css` with the proposed purple & gold luxury theme, animated background, and glassmorphism effects.
-- **Gold Navigation:** Updated the header to be full-width with a gold gradient and black text for high contrast.
-- **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
-- **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
-- **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
+- **Media Query Breakpoints:** Fixed a missing closing bracket layout bug that was crashing column grids across secondary responsive breakpoints.
+- **File System Refactoring:** Traced and rectified broken case-sensitive asset paths and bad file extension strings (e.g., `.PNGg`).
+- **CSS Code Cleanup:** Purged redundant declaration rows and compressed duplicate property rule targets.
 
-## Semantic Versioning
+---
 
-Format: MAJOR.MINOR.PATCH  
+## [0.1.0] - 2026-04-20
+### Added
+- **Core Directory Blueprint:** Built the base system hierarchy including designated assets folders (`/img`, `/css`).
+- **Semantic HTML Scaffolding:** Drafted clean structural markup loops across all 5 core index profiles (`index.html`, `about.html`, `services.html`, `enquiry.html`, `contact.html`).
+- **Repository Metadata:** Initialized structural documentation sheets including standard `README.md` and basic tracking roots inside `changelog.md`.
+
+### Fixed
+- **Style Link Hierarchy:** Fixed an absolute path structural tracking bug that initially prevented stylesheets from loading across root document profiles.
 Example: 2.1.3
 
 - MAJOR → Breaking changes (1.0.0 → 2.0.0)  
