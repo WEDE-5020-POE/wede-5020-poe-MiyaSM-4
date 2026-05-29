@@ -39,7 +39,11 @@ This project follows Semantic Versioning.
 - Added a native **click-to-reveal gallery toggle** using CSS `@keyframes slideDown` for smooth dropdown animations.
 - Designed a sleek, gradient-styled CTA button (`.btn-book`) with responsive hover states.
 - added pictures of my team to the **about page** and removed **images** i used as prop
-   
+- **CSS Styling:** Created `css/style.css` with the proposed purple & gold luxury theme, animated background, and glassmorphism effects.
+- **Gold Navigation:** Updated the header to be full-width with a gold gradient and black text for high contrast.
+- **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
+- **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
+- **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
 
 
 
@@ -56,9 +60,14 @@ This project follows Semantic Versioning.
 - **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
 
 ### Fixed
--changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.                                     
--Fixed missing closing brace in **media query** breaking the **contact page grid**.
+-changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.          Fixed missing closing brace in **media query** breaking the **contact page grid**.
 - Cleaned up broken **CSS property** syntax and consolidated duplicate design rules.
+- - Corrected broken image paths and inconsistent file extensions
+- **CSS Styling:** Created `css/style.css` with the proposed purple & gold luxury theme, animated background, and glassmorphism effects.
+- **Gold Navigation:** Updated the header to be full-width with a gold gradient and black text for high contrast.
+- **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
+- **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
+- **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
 
 ## Semantic Versioning
 
