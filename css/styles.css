@@ -170,6 +170,33 @@ footer nav a:hover {
     border-radius: 4px;
     box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
 }
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
+    filter: brightness(1.1);
+}
+
+section > img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.slideshow {
+    max-width: 650px;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.slideshow img {
+    width: 100%;
+    display: block;
+    transition: opacity 1s;
+}
 /*about page*/
 .split-section {
     display: flex;
