@@ -46,6 +46,8 @@ This project follows Semantic Versioning.
 
 ### Fixed
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it
+-Fixed missing closing brace in **media query** breaking the **contact page grid**.
+- Cleaned up broken **CSS property** syntax and consolidated duplicate design rules.
 
 ## Semantic Versioning
 
