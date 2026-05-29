@@ -21,6 +21,7 @@ This project follows Semantic Versioning.
 - style: upgrade contact form to a premium, responsive design
 - Added professional spacing, CSS grid rows, and smooth transition effects to the form elements.
 - Configured a dynamic .team-grid utilizing repeat(auto-fit, minmax(...)) for organic mobile adjustments
+- add button hover states and responsive image/slideshow components
 
 
 ### Changed
