@@ -45,7 +45,7 @@ This project follows Semantic Versioning.
 - Replaced the plain text team list on the about page with a responsive **Team Grid** layout using individual member profile cards (`team-card`).
 
 ### Fixed
--changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it
+-changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.                                     
 -Fixed missing closing brace in **media query** breaking the **contact page grid**.
 - Cleaned up broken **CSS property** syntax and consolidated duplicate design rules.
 
