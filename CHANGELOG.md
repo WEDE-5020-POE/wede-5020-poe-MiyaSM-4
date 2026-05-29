@@ -28,6 +28,8 @@ This project follows Semantic Versioning.
 - Added background, padding, and subtle shadow to the contact info container.
   Styled the h2 header with a gold color scheme and a bottom border.
   add selectors for form input fields
+ - form update:Added bottom margin to sections and removed margin from the last section to prevent awkward extra spacing.
+   
 
 
 
