@@ -38,6 +38,7 @@ This project follows Semantic Versioning.
 - Implemented a modern **glassmorphism** visual style using `backdrop-filter: blur()` and subtle transparent borders.
 - Added a native **click-to-reveal gallery toggle** using CSS `@keyframes slideDown` for smooth dropdown animations.
 - Designed a sleek, gradient-styled CTA button (`.btn-book`) with responsive hover states.
+- added pictures of my team to the **about page** and removed **images** i used as prop
    
 
 
@@ -52,7 +53,7 @@ This project follows Semantic Versioning.
 - **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
 -  **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
 - **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
-- **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs)..
+- **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
 
 ### Fixed
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.                                     
