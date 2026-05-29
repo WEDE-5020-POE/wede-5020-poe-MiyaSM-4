@@ -22,6 +22,11 @@ This project follows Semantic Versioning.
 - Added professional spacing, CSS grid rows, and smooth transition effects to the form elements.
 - Configured a dynamic .team-grid utilizing repeat(auto-fit, minmax(...)) for organic mobile adjustments
 - add button hover states and responsive image/slideshow components
+- Created a responsive CSS Grid for team members using auto-fit and minmax.
+- Styled team cards with a dark translucent background, gold bottom border, and flex centering.
+- Formatted circular profile images with custom borders and shadows.
+
+
 
 
 ### Changed
