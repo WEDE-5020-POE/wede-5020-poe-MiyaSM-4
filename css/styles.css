@@ -365,6 +365,15 @@ form button[type="submit"]:hover svg {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid rgba(212, 175, 55, 0.3);
 }
+/* Container for individual contact details*/
+.contact-info section {
+    margin-bottom: 2rem;
+}
+/* Container for individual contact details*/
+.contact-info section:last-child {
+    margin-bottom: 0;
+}
+
     /*about page*/
 }
 .split-section {
