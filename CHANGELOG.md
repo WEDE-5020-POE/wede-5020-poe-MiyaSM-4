@@ -47,8 +47,8 @@ This project follows Semantic Versioning.
 - Replaced the plain text team list on the about page with a responsive **Team Grid** layout using individual member profile cards (`team-card`).
 - **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
 -  **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
--  **Interactive Gallery Features (Services Page):** Implemented `<details>` and `<summary>` drop-down toggles (`.gallery-toggle`) under each service card, allowing clients to view alternative angles and styles without cluttering the page.
-- **Enhanced Visual Assets:** Added placeholder paths for main and multi-angle gallery images for Box Braids, Cornrows, Twists, Crochet Braids, and Faux Locs.
+- **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
+- **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs)..
 
 ### Fixed
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.                                     
