@@ -114,7 +114,7 @@ section h2 {
 section p {
     font-size: 1.1rem;                    /* Good, readable body text size */
     color: #f1f5f9;                       /* Off-white color so it’s easy on the eyes against dark backgrounds */
-    margin-bottom: 1rem;                  /
+    margin-bottom: 1rem;                  
 }
 
 
@@ -345,7 +345,7 @@ form button[type="submit"]:hover svg {
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+}
     form {
         padding: 24px;
     }
@@ -483,12 +483,12 @@ form button[type="submit"]:hover svg {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+}
     .form-row {
         grid-template-columns: 1fr;
         gap: 0;
     }
-}
+
 
 @media (max-width: 600px) {
     .contact-info,
@@ -496,10 +496,7 @@ form button[type="submit"]:hover svg {
         padding: 1.5rem;
     }
 }
-
-
     /*about page*/
-}
 .split-section {
     display: flex;
     flex-direction: row; /* Puts items side-by-side */
