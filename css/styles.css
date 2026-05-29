@@ -23,7 +23,7 @@ body {
     line-height: 1.6;
 }
 
-
+/*code scored from CSS Web Design Studi(2026)*/
 @keyframes slowBackgroundShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -48,7 +48,7 @@ header {
 }
  
 
-/* Aligns logo image and text horizontally with a gold glow*/
+/* Aligns logo image and text horizontally with a gold glow( code sourced from w3schools)*/
 .logo {
     display: flex;
     align-items: center;
@@ -298,6 +298,7 @@ section > img {
     margin: 0;
 }
 /* Booking Form Styles */
+/*booking form made with the intent that it has to blend with the backgoud of the form*/
 form {
     background: #fff;
     border-radius: 12px;
@@ -405,6 +406,7 @@ form button[type="submit"]:hover svg {
     padding: 0 20px;
 }
     /* Left Side - Contact Info */
+    /*want my contact information on the write and form left hand site for readebility*/
 .contact-info {
     background: #fff;
     padding: 2rem;
@@ -529,6 +531,21 @@ form button[type="submit"]:hover svg {
     font-size: 24px;     
 }
 
+.map-container {
+    width: 100%;
+    max-width: 1100px; /* Matches your main container size */
+    margin: 2rem auto;
+    border-radius: 12px;
+    overflow: hidden; /* Cleans up the map corners to match the border radius */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-container iframe {
+    width: 100% !important; /* Forces the map to fill the container responsively */
+    height: 400px;          /* Adjust the height to your preference */
+    display: block;
+}
 /* Responsive Design */
 @media (max-width: 900px) {
     .contact-container {
@@ -760,6 +777,7 @@ form button[type="submit"]:hover svg {
 
 
 /* Mobile adjustments for services only */
+/*code scored from CSS Web Design Studi*/
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
