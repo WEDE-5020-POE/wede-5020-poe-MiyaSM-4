@@ -31,6 +31,7 @@ This project follows Semantic Versioning.
  - form update:Added bottom margin to sections and removed margin from the last section to prevent awkward extra spacing.
  - Standardized width, padding, borders, and radius for text, email, tel, and textarea fields of the contact form.Added a smooth transition effect on focus.
  - implemented a responsive media queries for my form
+ - - Implemented a two-column CSS Grid layout for the **Contact Page** container to separate contact details and the interaction form cleanly.
    
 
 
