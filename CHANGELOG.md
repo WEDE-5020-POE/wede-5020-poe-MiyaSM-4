@@ -30,6 +30,7 @@ This project follows Semantic Versioning.
   add selectors for form input fields
  - form update:Added bottom margin to sections and removed margin from the last section to prevent awkward extra spacing.
  - Standardized width, padding, borders, and radius for text, email, tel, and textarea fields of the contact form.Added a smooth transition effect on focus.
+ - implemented a responsive media queries for my form
    
 
 
