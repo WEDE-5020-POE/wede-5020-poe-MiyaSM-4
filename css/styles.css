@@ -349,7 +349,17 @@ form button[type="submit"]:hover svg {
     form {
         padding: 24px;
     }
-    
+    /* Contact Page Layout */
+    /* Main layout wrapper for the contact page splitting it into two columns */
+.contact-container {
+    display: grid;
+    /* Left column (Contact Info) takes 1 part, right column (Form) takes 1.5 parts of space */
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
     /* Left Side - Contact Info */
 .contact-info {
     background: #fff;
