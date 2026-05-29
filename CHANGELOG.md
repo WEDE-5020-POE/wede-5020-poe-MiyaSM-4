@@ -32,6 +32,8 @@ This project follows Semantic Versioning.
  - Standardized width, padding, borders, and radius for text, email, tel, and textarea fields of the contact form.Added a smooth transition effect on focus.
  - implemented a responsive media queries for my **forms**
  - Implemented a two-column CSS Grid layout for the **Contact Page** container to separate contact details and the interaction form cleanly.
+ - **Interactive Gallery Features (Services Page):** Implemented `<details>` and `<summary>` drop-down toggles (`.gallery-toggle`) under each service card, allowing clients to view alternative angles and styles without cluttering the page.
+- **Enhanced Visual Assets:** Added placeholder paths for main and multi-angle gallery images for Box Braids, Cornrows, Twists, Crochet Braids, and Faux Locs.
    
 
 
