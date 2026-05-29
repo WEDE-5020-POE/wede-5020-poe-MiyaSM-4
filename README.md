@@ -25,7 +25,7 @@ Home page: the homepage will a slide show imaje of a luxury hair design and a bu
 About US: about us page will tell the users more about SM luxury they will get to know the  hairstylists, what to expect and  SM luxury’s  vision and mission<br>
 Service: A gallery of all hairstyles including their prices.<br>
 Enquiry: will contain a Functional form for service inquiries or appointments.<br>
-Contact: were you‘ll find the business contact information.<br>
+Contact: were you‘ll find the business contact information and the map of were you can locate the business.<br>
 
 
 
@@ -59,9 +59,11 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 
 
 ## website view
-Website on a laptop
+**Website on a laptop**
 <img width="1896" height="932" alt="image" src="https://github.com/user-attachments/assets/703d03c5-6d4f-4291-8035-c031c41aead7" />
-Wbsite on a cell phone
+**Wbsite on a cell phone**
+<img width="748" height="1600" alt="phone image" src="https://github.com/user-attachments/assets/d7dc74ec-dad4-4e60-9998-fa8a0d9421d8" />
+
 
 
 ## Sitemap
