@@ -9,7 +9,9 @@ html, body {
     background-color: #3a0e58; /* Fallback color while gradient loads */
 }
 
-/* main boady*/
+/*---------------------------------------------------------------------------------------------------
+                                           main boady
+------------------------------------------------------------------------------------------------- */
 body {
     background: linear-gradient(135deg, #713c94, #614caf, #3d1666, #1c3561);/*the companies colour is blue and purple so the background will have a colour shift of sifferent shades of the two coulors together*/
     background-size: 300% 300%;
@@ -34,15 +36,17 @@ body {
  */
 header {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
+    margin: 0;
     padding: 1.5rem 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.2); 
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(to right, #b38f2d, #d4af37, #f9e49b);
+    border-bottom: 2px solid #8a6d20;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+ 
 
 /* Aligns logo image and text horizontally with a gold glow*/
 .Logo {
@@ -154,7 +158,9 @@ footer nav a:hover {
     color: #d4af37;            
            /* Changes to a warm golden color when hovered*/
 }
- /*Home  page*/
+ /*---------------------------------------------------------------------------------------------------
+                                          Home  page
+ -------------------------------------------------------------------------------------------------*/
  .btn {
     display: block;/* would like the button to be centered and not inline */
     width: fit-content;
@@ -184,20 +190,56 @@ section > img {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* SLIDESHOW STYLES */
 .slideshow {
-    max-width: 650px;
-    margin: 1.5rem auto;
+    max-width: 800px;
+    margin: 2rem auto;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    position: relative;
+    background: #000;
 }
 
-.slideshow img {
+.slide {
+    display: none;
     width: 100%;
-    display: block;
-    transition: opacity 1s;
+    height: auto;
 }
-/*about page*/
+
+.slide.active {
+    display: block;
+    animation: fadeSlide 1.2s ease;
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.slideshow-dots {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #666;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dot.active, .dot:hover {
+    background-color: #d4af37;
+    transform: scale(1.2);
+}
+/*-------------------------------------------------------------------------------------------------------
+                                           about page
+------------------------------------------------------------------------------------------------------------*/
 .split-section {
     display: flex;
     flex-direction: row; /* Puts items side-by-side */
@@ -496,7 +538,9 @@ form button[type="submit"]:hover svg {
         padding: 1.5rem;
     }
 }
-    /*about page*/
+    /*-------------------------------------------------------------------------------------------
+                                    about page
+    ---------------------------------------------------------------------------------------*/
 .split-section {
     display: flex;
     flex-direction: row; /* Puts items side-by-side */
@@ -691,6 +735,7 @@ form button[type="submit"]:hover svg {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
+
 
 /* Mobile adjustments for services only */
 @media (max-width: 768px) {
