@@ -373,6 +373,26 @@ form button[type="submit"]:hover svg {
 .contact-info section:last-child {
     margin-bottom: 0;
 }
+.info-item,
+.hours-item {
+    margin-bottom: 1.2rem;
+}
+
+.info-item strong,
+.hours-item strong {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.info-item p,
+.hours-item p {
+    color: #666;
+    margin: 0;
+    font-size: 1rem;
+}
+
 
     /*about page*/
 }
