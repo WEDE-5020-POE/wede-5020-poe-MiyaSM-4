@@ -62,7 +62,7 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 **Website on a laptop**
 <img width="1896" height="932" alt="image" src="https://github.com/user-attachments/assets/703d03c5-6d4f-4291-8035-c031c41aead7" />
 **Wbsite on a cell phone**
-<img width="748" height="1600" alt="phone image" src="https://github.com/user-attachments/assets/d7dc74ec-dad4-4e60-9998-fa8a0d9421d8" />
+<img width="600" height="160" alt="phone image" src="https://github.com/user-attachments/assets/d7dc74ec-dad4-4e60-9998-fa8a0d9421d8" />
 
 
 
@@ -71,7 +71,7 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 ![Website Sitemap](img/my-sitemap.png) <br> 
 
 ## References
-CSS Web Design Studio (2026) Fixing horizontal image stretching and mobile columns in CSS flexbox. Available at: https://www.cssdesignstudio.com/flexbox-gallery-fix (Accessed: 28 May 2026).
+Coyier, C. (2026) A Complete Guide to CSS Flexbox. Available at: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ (Accessed: 30 May 2026).<br>
 Host Africa (2026) Web hosting in South Africa. Available at: https://hostafrica.co.za/web-hosting/ (Accessed: 11 April 2026)<br>
 W3Schools (2026) HTML  Tag. Available at: https://www.w3schools.com/tags/tag_option.asp (Accessed: 20 April 2026).<br>
 Thriving Stylist (2025) Unexpected challenges salon owner’s face. Available at: https://thrivingstylist.com/blog/unexpected-challenges-salon-owners-face/ 
