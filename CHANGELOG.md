@@ -1,85 +1,30 @@
-# CHANGELOG
-
+CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] 
-### Added
-**Part1**
-- Created the core project directory structure.
-- Initialized repository with a blank `README.md` and `changelog.md`.
-- Drafted the basic skeleton layout for the 5 core HTML pages (`index.html`, `about.html`, `services.html`, `enquiry.html`, `contact.html`).
-- Set up system asset folders (`/img` and `/css`).
-**part2**
-- linked my pages to the **styless.css**
-- Added a image showing various hairstyles to the **home page** so the first thing clients see is a slideshow of various hair styles we proved
-- Added an active page tracking mechanism using class="current Page" to highlight the user's current location in the **navigation menus**.
-- Since my business main colours are blue and purple i decided to create a **background** of the mixture of the two with a little colour change i bebelive the colour change will bring live to the site
-- Added a modern, frosted-glass **header** with responsive spacing and flexbox alignment
-- Created a **logo** section that perfectly aligns the icon and text with a custom gold glow and typography
-- Styled **footer** layout, typography, and nav hover effects
-- Centered button layout and updated gradient styling on my **home pge**
-- Decided to add serves preview setion to my **home page**
-- Created .split-section class utilizing Flexbox to align text and images elegantly.
-- Styled imagery with custom dimensions, cover fitting, and shadows for a premium aesthetic.
-- style: upgrade **contact form** to a premium, responsive design
-- Added professional spacing, CSS grid rows, and smooth transition effects to the form elements on the **contact form**.
-- Configured a dynamic .team-grid utilizing repeat(auto-fit, minmax(...)) for organic mobile adjustments
-- add button hover states and responsive image/slideshow components
-- Created a responsive CSS Grid for team members using auto-fit and minmax.
-- Styled team cards with a dark translucent background, gold bottom border, and flex centering.
-- Formatted circular profile images with custom borders and shadows.
-- Added background, padding, and subtle shadow to the **contact info container**.
-  Styled the h2 header with a gold color scheme and a bottom border.
-  add selectors for form input fields
- - **form update**:Added bottom margin to sections and removed margin from the last section to prevent awkward extra spacing.
- - Standardized width, padding, borders, and radius for text, email, tel, and textarea fields of the contact form.Added a smooth transition effect on focus.
- - implemented a responsive media queries for my **forms**
- - Implemented a two-column CSS Grid layout for the **Contact Page** container to separate contact details and the interaction form cleanly.
- - **Interactive Gallery Features (Services Page):** Implemented `<details>` and `<summary>` drop-down toggles (`.gallery-toggle`) under each service card, allowing clients to view alternative angles and styles without cluttering the page.
-- **Enhanced Visual Assets:** Added placeholder paths for main and multi-angle gallery images for Box Braids, Cornrows, Twists, Crochet Braids, and Faux Locs.
-- Created the CSS architecture for a brand new, premium **Services Page**.
-- Implemented a modern **glassmorphism** visual style using `backdrop-filter: blur()` and subtle transparent borders.
-- Added a native **click-to-reveal gallery toggle** using CSS `@keyframes slideDown` for smooth dropdown animations.
-- Designed a sleek, gradient-styled CTA button (`.btn-book`) with responsive hover states.
-- added pictures of my team to the **about page** and removed **images** i used as prop
-- **CSS Styling:** Created `css/style.css` with the proposed purple & gold luxury theme, animated background, and glassmorphism effects.
-- **Gold Navigation:** Updated the header to be full-width with a gold gradient and black text for high contrast.
-- **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
-- **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
-- **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
+[2.0.0 - Part 2 Submission]
+## Added
+- External `css/styles.css` stylesheet linked to all 5 HTML pages
+- Structured media queries at 1024px (tablet), 768px (mobile), and 480px (small mobile) for responsive breakpoints 
+- `srcset` and `sizes` attributes to key images (slideshow, vision, services) to serve optimized resolutions based on viewport width 
+- `:hover`, `:focus`, and `:active` pseudo-classes to buttons, navigation links, and form inputs for interactive accessibility 
+- Proper `contact.html` page replacing duplicate services file, featuring CSS Grid split-layout, embedded Google Maps iframe, and accessible form structure
+- Detailed README documentation with changelog, references, and submission checklist for lecturer review
 
+## Changed
+- Converted all fixed `px` typography, padding, and margin values to scalable `rem` units for consistent responsive scaling across devices 
+- Consolidated duplicate `.form-row`, `.split-section`, `form`, and `contact-form` CSS rules to prevent cascading overwrites and ensure predictable rendering 
+- Restructured navigation and footer HTML to use clean semantic `<ul>`/`<li>` layout with a single `.current` class for active page tracking
+- Updated layout architecture to consistently use Flexbox (header, nav, split-section) and CSS Grid (team-grid, service-container, contact-container) for desktop structure (Rubric 2.4)
+- Standardized project structure into 5 separate, validated HTML files: `index.html`, `about.html`, `services.html`, `booking.html`, `contact.html`
 
+## Fixed
 
-
-### Changed
-**part2**
-- Changed text layout from paragraph with line breaks to a clean bulleted list for better readability
-- Redesigned the contact page layout to place business information on the left and the message form on the right.
-- Updated the **About Us** page layout structure to use semantic section classes (`story-section`, `split-section`, `team-section`).
-- Restructured the **Vision and Mission** section on the about page into a side-by-side split layout, moving the main image to the left side.
-- Replaced the plain text team list on the about page with a responsive **Team Grid** layout using individual member profile cards (`team-card`).
-- **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
--  **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
-- **Services Page Refactoring:** Completely overhauled the services page layout, moving from a basic semantic text structure (`<article>`) to a modern, dynamic card-based system (`.service-card`) to build a clean gallery interface.
-- **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
-
-### Fixed
-**part2**
--changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.          Fixed missing closing brace in **media query** breaking the **contact page grid**.
-- Cleaned up broken **CSS property** syntax and consolidated duplicate design rules.
-- - Corrected broken image paths and inconsistent file extensions
-- **CSS Styling:** Created `css/style.css` with the proposed purple & gold luxury theme, animated background, and glassmorphism effects.
-- **Gold Navigation:** Updated the header to be full-width with a gold gradient and black text for high contrast.
-- **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
-- **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
-- **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
-- Fixed invalid nested <a> tags, unclosed elements, and inconsistent casing across all HTML files
-- Consolidated duplicate CSS rules; corrected max-width typo (1200% → 1200px)
-- Converted typography & spacing to rem units for scalable, responsive design
-- Added srcset & sizes attributes to key images for viewport-optimized loading
-- Structured media queries at 1024px, 768px, and 480px breakpoints
-- Replaced duplicate services page with properly structured contact.html
-- Linked all pages to external css/styles.css per rubric requirements"
+- Invalid nested `<a>` tags across all pages (e.g., `<a class="current"><a href="...">` → corrected to single valid link structure)
+- Critical CSS syntax error: `max-width: 1200%` corrected to `max-width: 1200px` in header styling
+- Broken/unclosed HTML elements and inconsistent casing (`<Header>`/`<FOoter>`/`<Section>` → `<header>`/`<footer>`/`<section>`) for W3C validation compliance
+- Missing closing braces and overlapping media query rules that broke responsive form/grid layouts on smaller viewports
+- Incorrect `enquiry.html` references updated to `booking.html` for consistent internal routing and user experience
+- Removed concatenated page blocks and ensured each HTML file contains only its respective content, header, and footer
 
 ## Semantic Versioning
 
