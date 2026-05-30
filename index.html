@@ -1,126 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>SM Luxury Hair Salon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>SM Luxury Hair Salon</title>
 </head>
-
 <body>
-        <Header>
-                <div class="logo">
-                        <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
-                        <h1>SM Luxury Hair Salon</h1>
-                </div>
-                <nav>
-                        <!-- ACTIVE NAVIGATION: Move the 'current' class to the link of the active page -->
-                        <ul>
-                                <li class="current Page"><a href="index.html">Home page</a></li>
-                                <li><a href="About.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li> <a href="enquiry.html">Booking</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                </nav>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
+      <h1>SM Luxury Hair Salon</h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </Header>
-        <section>
-                <!--this is our main page our page which will welcome clients to the site-->
-                <h2>Luxury without guess work</h2>
-                <p>
-                        Expert braiding services specializing in protective styles for natural hair
-                        <!--call action book now button at the home page for those who knows about our services and just wants to go straight to booking-->
-                        <a href="Booking.html" class="btn">Book Now</a>
-                </p>
-                <!--this part im creating a image slide show for the home page were clients will see our various hair styles-->
-                <!--sourced code from w3schools-->
-                <section class="split-section"> 
-                <div class="slideshow">
-                         <img src="img/Different_hair_styles.JPG" alt="SM Luxury different hairstyles" class="slide active">
-                        <img src="img/slideshow.PNG" alt="SM Luxury different hairstyles" class="slide">
-                </div>
-  
-                 <div class="slideshow-dots">
-                        <span class="dot active" onclick="currentSlide(0)"></span>
-                         <span class="dot" onclick="currentSlide(1)"></span>
-                </div>
-      </Section>                
-                          <!-- Adding a service preview -->
+  <main>
+    <section>
+      <h2>Luxury without guess work</h2>
+      <p>Expert braiding services specializing in protective styles for natural hair.</p>
+      <a href="enquiry.html" class="btn">Book Now</a>
+    </section>
 
-                            <!--sorced code fom w3schools(2026)-->
-                        <section class="service-preview">
-                        <h2>Our Services</h2>
-    
-                         <!-- Added this wrapper container to hold the cards in a row -->
-                                <div class="service-container">
-                                 <div class="service-card">
+    <!-- RUBRIC 3.3: Responsive images -->
+    <section class="slideshow">
+      <img src="img/Different_hair_styles.JPG" 
+           srcset="img/Different_hair_styles-400.jpg 400w, img/Different_hair_styles.JPG 800w" 
+           sizes="(max-width: 600px) 100vw, 800px" 
+           alt="SM Luxury different hairstyles" class="slide active">
+      <img src="img/slideshow.PNG" 
+           srcset="img/slideshow-400.png 400w, img/slideshow.PNG 800w" 
+           sizes="(max-width: 600px) 100vw, 800px" 
+           alt="SM Luxury different hairstyles" class="slide">
+    </section>
+    <div class="slideshow-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
 
-                                  <h3>Box Braids</h3>
-                                  <p>Classic protective style that is long-lasting.</p>
-                                 </div>
-                                <div class="service-card">
-                                         <h3>Knotless Braids</h3>
-                                        <p>Gentle on your scalp with a natural, seamless look.</p>
-                                 </div>
+    <section class="service-preview">
+      <h2>Our Services</h2>
+      <div class="service-container">
+        <div class="service-card"><h3>Box Braids</h3><p>Classic protective style that is long-lasting.</p></div>
+        <div class="service-card"><h3>Knotless Braids</h3><p>Gentle on your scalp with a natural, seamless look.</p></div>
+        <div class="service-card"><h3>Twists & More</h3><p>From Senegalese to passion twists, we do it all.</p></div>
+      </div>
+      <a href="services.html" class="btn">View all Services</a>
+    </section>
 
-                                <div class="service-card">
-                                         <h3>Twists & More</h3>
-                                        <p>From Senegalese to passion twists, we do it all.</p>
-                                 </div>
-                                 </div>
+    <section class="why-choose">
+      <h2>Why Choose SM Luxury?</h2>
+      <ul class="price-list">
+        <li><strong>4+ Years Experience</strong> - Skilled in African braiding techniques</li>
+        <li><strong>Premium Quality Hair</strong> - We use only the best materials</li>
+        <li><strong>Hair Health First</strong> - Protective styles that care for your natural hair</li>
+        <li><strong>Custom Designs</strong> - Styles tailored to your preference</li>
+        <li><strong>Easy Booking</strong> - Book online or call us anytime</li>
+      </ul>
+    </section>
 
-                                 <!-- Button leading to the services page -->
-                                 <div class="center-btn">
-                                <a href="services.html" class="btn">View all Services</a>
-                                 </div>
-                                </section>
+    <section class="cta">
+      <h2>Ready to Transform Your Look?</h2>
+      <p>Book your appointment today and experience luxury hair care</p>
+      <a href="booking.html" class="btn">Book Now</a>
+    </section>
+  </main>
 
-                         <!--quick brief of why a persorn might choose sm luxury-->
-                        <!-- Why Choose Us -->
-                 <section class="why-choose">
-                <h2>Why Choose SM Luxury?</h2>
-               
-                        <ul class="features-list">
-                        <li> <strong>4+ Years Experience</strong> - Skilled in African braiding techniques</li>
-                        <li><strong>Premium Quality Hair</strong> - We use only the best materials</li>
-                        <li> <strong>Hair Health First</strong> - Protective styles that care for your natural hair</li>
-                        <li> <strong>Custom Designs</strong> - Styles tailored to your preference</li>
-                        <li> <strong>Easy Booking</strong> - Book online or call us anytime</li>
-                         </ul>
-                </section>
-                
-
-         <section class="cta">
-                <h2>Ready to Transform Your Look?</h2>
-                <p>Book your appointment today and experience luxury hair care</p>
-                <a href="Booking.html" class="btn">Book Now</a>
-         </section>
-
-
-
-
-        
-
-        <footer>
-                <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>
-                <nav>
-
-                        <a class="current Page"><a href="index.html">Home_page</a>
-                                <a href="About.html">About</a>
-                                <a href="services.html">Services</a>
-                                <a href="enquiry.html">Booking</a>
-                                <a href="contact.html">Contact</a>
-
-
-                </nav>
-
-
-        </footer>
-
-
-
+  <footer>
+    <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
 </body>
-
-</html>>
+</html>
