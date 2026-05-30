@@ -64,6 +64,7 @@ All notable changes to this project will be documented in this file.
 - **Updated Pricing Structures:** Revised the flat rates on the services page to show detailed tiered pricing based on length and design (e.g., Short, Medium, Long, and Custom Designs).
 
 ### Fixed
+**part2**
 -changes i did to my pages on the CSS page wont visible as i incorrectly linked my pages to the CSS page so had to change it.          Fixed missing closing brace in **media query** breaking the **contact page grid**.
 - Cleaned up broken **CSS property** syntax and consolidated duplicate design rules.
 - - Corrected broken image paths and inconsistent file extensions
@@ -72,6 +73,13 @@ All notable changes to this project will be documented in this file.
 - **Homepage Slideshow:** Implemented an image slider with auto-advance and manual dot navigation.
 - **Interactive Gallery:** Added "Click to Reveal" functionality on the Services page using HTML5 `<details>` tags.
 - **Mobile Responsiveness:** Added CSS media queries to ensure all layouts (header, grid, forms) adapt correctly on smaller screens.
+- Fixed invalid nested <a> tags, unclosed elements, and inconsistent casing across all HTML files
+- Consolidated duplicate CSS rules; corrected max-width typo (1200% → 1200px)
+- Converted typography & spacing to rem units for scalable, responsive design
+- Added srcset & sizes attributes to key images for viewport-optimized loading
+- Structured media queries at 1024px, 768px, and 480px breakpoints
+- Replaced duplicate services page with properly structured contact.html
+- Linked all pages to external css/styles.css per rubric requirements"
 
 ## Semantic Versioning
 
