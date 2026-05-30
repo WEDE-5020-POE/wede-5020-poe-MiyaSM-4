@@ -70,7 +70,7 @@ section {
  */
 header {
     width: 100%;
-    max-width:1200px;
+    max-width:1200%;
     margin: 0;
     padding: 1.5rem 4%;
     display: flex;
@@ -106,15 +106,13 @@ nav ul {
     list-style: none;/*   remove the bullet points from the navigation */
     display: flex;/* <-- align the links horizontally side-by-side */
     gap: 2.5rem;
-    width: 100 ;
 }
 
 nav a {
     color: #000000;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
-    padding: 0.5rem 0;
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: color 0.3s ease;
@@ -128,8 +126,7 @@ main {
     max-width: 1100px;           
     margin: 2rem auto;   /*2rem users relative units*/          
     flex-direction: column;        /* Stacks the child elements (sections) vertically in a column */
-    gap: 2rem; 
-    flex: 1;                    
+    gap: 2rem;                     
 }
 /* Contnet section (FROSTED GLASS EFFECT)*/
 section {
@@ -137,14 +134,14 @@ section {
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
-    padding: 1.5rem 1rem;
+    padding: 3rem;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 /*ensuring my headings have a readeble font*/
 section h2 {
     font-family: 'Playfair Display', 'Georgia', serif;  /* Elegant font choice for a high-end look */
-    font-size: 1rem;                    /* Makes the section headings stand out clearly */
+    font-size: 2.2rem;                    /* Makes the section headings stand out clearly */
     font-weight: 400;                    
     letter-spacing: 1px;                  
     color: #ffd700;                       /* Bright gold color to match the branding theme */
@@ -153,7 +150,7 @@ section h2 {
 
 /* Section Paragraphs */
 section p {
-    font-size: 1rem;                    /* Good, readable body text size */
+    font-size: 1.1rem;                    /* Good, readable body text size */
     color: #f1f5f9;                       /* Off-white color so it’s easy on the eyes against dark backgrounds */
     margin-bottom: 1rem;                  
 }
@@ -179,9 +176,7 @@ footer nav {
     margin-top: 1.2rem;                   
     display: flex;                        /* Flexbox to line up the links */
     justify-content: center;              /* Centers the link row horizontally */
-    gap: 1rem;  
-    flex-wrap: wrap;
-
+    gap: 2rem;                           
 }
 
 /* Footer Links */
@@ -203,16 +198,15 @@ footer nav a:hover, footer nav a:focus {
  -------------------------------------------------------------------------------------------------*/
  .btn {
     display: block;/* would like the button to be centered and not inline */
-    width: 100;
+    width: fit-content;
     margin: 1.5rem auto 2rem auto;
     background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f8e49d 100%);
     color: #0f061b;
     text-decoration: none;/* Removes underline from links */
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 3rem;
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 1.5px;
     border-radius: 4px;
     box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
@@ -233,8 +227,8 @@ section > img {
 }
 /* SLIDESHOW STYLES */
 .slideshow {
-    max-width: 100px;
-    margin: 1rem 0;
+    max-width: 800px;
+    margin: 2rem auto;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0,0,0,0.5);
@@ -345,9 +339,7 @@ section > img {
 .service-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   padding: 0 1rem;
 }
@@ -358,8 +350,7 @@ section > img {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 1.5rem;
-  width: 100;
-  max-width: 320px;
+  width: 320px;
   text-align: center;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -572,7 +563,6 @@ form button[type="submit"]:hover svg {
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-    max-width: 100%;
 }
 
 .contact-form .section-title {
@@ -582,12 +572,12 @@ form button[type="submit"]:hover svg {
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-form label {
@@ -675,8 +665,8 @@ form button[type="submit"]:hover svg {
 /* Mobile responsive*/
 /*sorce Coyier(2026)*/
 @media (max-width: 768px) {
-  header { flex-direction: column; gap: 1rem; padding: 1rem; max-width: 100% ;}
-  nav ul { flex-direction: column; align-items: center; gap: 1rem; width: 100;}
+  header { flex-direction: column; gap: 1rem; padding: 1rem; }
+  nav ul { flex-direction: column; align-items: center; gap: 1rem; }
   
   .service-container { flex-direction: column; align-items: center; }
   .service-card { width: 90%; }
@@ -692,7 +682,4 @@ form button[type="submit"]:hover svg {
   h2 { font-size: 1.6rem; }
   h3 { font-size: 1.2rem; }
   .btn, .btn-book { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
-  nav ul { gap: 0.5rem}
-  .log img { height: 40px; }
-  .log h1 { font-size: 1.2rem; }
 }
