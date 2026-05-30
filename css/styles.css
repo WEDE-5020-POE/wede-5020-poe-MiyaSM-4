@@ -14,7 +14,7 @@ html {
 body {
     min-height: height 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #713c94, #614caf, #3d1666, #1c3561);/*the companies colour is blue and purple so the background will have a colour shift of sifferent shades of the two coulors together*/
+    background: linear-gradient(135deg, #713c94, #614caf, #5d2f8f, #3c537c);/*the companies colour is blue and purple so the background will have a colour shift of sifferent shades of the two coulors together*/
     background-size: 300% 300%;
     animation: slowBackgroundShift 16s;
     color: #ffffff;
