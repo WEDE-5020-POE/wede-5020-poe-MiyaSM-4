@@ -23,93 +23,85 @@
         </nav>
     </header>
 
-
     <main>
         <section>
-        <h2>Book Your Appointment</h2>
-        <p>Ready to experience the luxury of SM Luxury Hair Salon? Book your appointment today and let our expert stylists take care of your hair needs.</p>
-       </section>
-        <form action="BOOKING-Handler.php" method="POST" id="bookingForm">
-        <div class="form-row">
-        <div class="form-group">
-            <label for="Full_Names">Full Names *</label>
-            <input type="text" id="Full_Names" name="Full_Names" required>
-        </div>
-        <div class="form-group">
-            <label for="Email">Email *</label>
-            <input type="email" id="Email" name="Email" required>
-        </div>
-    </div>
-    
-    <div class="form-row">
-        <div class="form-group">
-            <label for="Phone-Number">Phone Number *</label>
-            <input type="tel" id="Phone-Number" name="Phone-Number" required>
-        </div>
-        <div class="form-group">
-            <label for="Service-type">Service Type *</label>
-            <select id="Service-type" name="Service-type" required>
-                <option value="">-- Select a Service --</option>
-                <option value="haircut">Haircut</option>
-                <option value="coloring">Hair Coloring</option>
-                <option value="styling">Hair Styling</option>
-                <option value="treatment">Hair Treatment</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label for="prefered_time">Preferred Time *</label>
-        <select id="prefered_time" name="prefered_time" required>
-            <option value="">-- Select a Time --</option>
-            <option value="9:00">9:00 AM</option>
-            <option value="10:00">10:00 AM</option>
-            <option value="11:00">11:00 AM</option>
-            <option value="13:00">1:00 PM</option>
-            <option value="14:00">2:00 PM</option>
-            <option value="15:00">3:00 PM</option>
-            <option value="16:00">4:00 PM</option>
-            <option value="17:00">5:00 PM</option>
-            <option value="18:00">6:00 PM</option>
-            <option value="19:00">7:00 PM</option>
-        </select>
-    </div>
-    
-    <div class="form-group">
-        <label for="Notes">Additional Information / Special Requests</label>
-        <textarea id="Notes" name="Notes" rows="4"></textarea>
-    </div>
-    
-    <div class="form-submit">
-        <button type="submit">
-            <span>Book Now</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="22" y1="2" x2="11" y2="13"></line>
-                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-        </button>
-    </div>
-</form>->
+            <h2>Book Your Appointment</h2>
+            <p>Ready to experience the luxury of SM Luxury Hair Salon? Book your appointment today and let our expert stylists take care of your hair needs.</p>
+        </section>
 
+        <form action="BOOKING-Handler.php" method="POST" id="bookingForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Full_Names">Full Names *</label>
+                    <input type="text" id="Full_Names" name="Full_Names" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email *</label>
+                    <input type="email" id="Email" name="Email" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Phone-Number">Phone Number *</label>
+                    <input type="tel" id="Phone-Number" name="Phone-Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="Service-type">Service Type *</label>
+                    <select id="Service-type" name="Service-type" required>
+                        <option value="">-- Select a Service --</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="coloring">Hair Coloring</option>
+                        <option value="styling">Hair Styling</option>
+                        <option value="treatment">Hair Treatment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="prefered_time">Preferred Time *</label>
+                <select id="prefered_time" name="prefered_time" required>
+                    <option value="">-- Select a Time --</option>
+                    <option value="9:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="Notes">Additional Information / Special Requests</label>
+                <textarea id="Notes" name="Notes" rows="4"></textarea>
+            </div>
+            
+            <div class="form-submit">
+                <button type="submit">
+                    <span>Book Now</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </form>
     </main>
-        <footer>
-         
+
+    <footer>
         <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>   
         <nav>
-       
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
             <a href="services.html">Services</a>
-            <a class="current Page"><a href="enquiry.html">Booking</a>
+            <a href="enquiry.html" class="current Page">Booking</a>
             <a href="contact.html">Contact</a>
-
-
         </nav>
-        </footer>
-            
-        
-        
-    
+    </footer>
 </body>
 </html>
