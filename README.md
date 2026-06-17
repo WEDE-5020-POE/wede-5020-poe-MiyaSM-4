@@ -58,17 +58,6 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 | **Week 9** <br>*(29/05/2026)* | Final Submission | • **Submit Part 2** (Final polished web solution). |
 
 
-## website view
-**Website on a laptop**
-<img width="1896" height="932" alt="image" src="https://github.com/user-attachments/assets/703d03c5-6d4f-4291-8035-c031c41aead7" />
-**Wbsite on a cell phone**
-<img width="679" height="815" alt="mobile" src="https://github.com/user-attachments/assets/9fae08b8-aa23-4867-900d-79743a519e76" />
-
-**Wbsite on a tablet**
-<img width="967" height="910" alt="Tablet" src="https://github.com/user-attachments/assets/e4f70e47-7475-400f-9ee7-9632cef775f0" />
-<img width="1200" height="930" alt="tab" src="https://github.com/user-attachments/assets/a8613484-ac6c-4c41-af72-6a43c5fa5b38" />
-
-
 
 
 ## Sitemap
