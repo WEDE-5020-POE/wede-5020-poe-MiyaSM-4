@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SM Luxury Hair Salon - Contact Us</title>
+    <!-- CHANGED: Better SEO meta tags -->
+    <meta name="description" content="Contact SM Luxury Hair Salon. Located at 057 Qweens Street, Pretoria. Call 082 974 6593 or send us a message.">
+    <meta name="keywords" content="contact hair salon, Pretoria salon contact, hair salon phone number, salon address">
+    <title>Contact Us | SM Luxury Hair Salon - Get in Touch</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- ADDED: Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- NEW: Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "SM Luxury Hair Salon",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "057 Qweens Street",
+            "addressLocality": "Pretoria",
+            "postalCode": "0122",
+            "addressCountry": "ZA"
+        },
+        "telephone": "+27829746593",
+        "email": "info@smLuxuryHairSalon.com"
+    }
+    </script>
 </head>
 <body>
+    <!-- CHANGED: Added mobile toggle button -->
     <header>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <div class="logo">
-            <img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo">
+            <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
             <h1>SM Luxury Hair Salon</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="enquiry.html">Booking</a></li>
-                <li class="current Page"><a href="contact.html">contact us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Book Now</a></li>
+                <li><a href="contact.html" class="current-page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- whole code scode from w3schools-->
-    <h1>Contact Us</h1>
-    <p>Have questions or want to schedule an appointment? Reach out to us!</p>
 
-    <div class="contact-container">
-        <!-- LEFT SIDE: Contact Info -->
-        <div class="contact-info">
-            <section>
+    <main>
+        <!-- whole code sourced from w3schools -->
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have questions or want to schedule an appointment? Reach out to us!</p>
+        </section>
+
+        <div class="contact-container">
+            <!-- LEFT SIDE: Contact Info -->
+            <!-- want my contact information on the right and form left hand side for readability -->
+            <div class="contact-info">
                 <h2>Get in Touch</h2>
+                <!-- Container for individual contact details -->
                 <div class="info-item">
                     <strong>Email:</strong>
                     <p>info@smLuxuryHairSalon.com</p>
@@ -44,9 +73,7 @@
                     <strong>Address:</strong>
                     <p>057 Qweens Street, Pretoria, 0122</p>
                 </div>
-            </section>
 
-            <section>
                 <h2>Hours of Operation</h2>
                 <div class="hours-item">
                     <strong>Monday - Friday:</strong>
@@ -61,62 +88,137 @@
                     <p>Closed</p>
                 </div>
         
-            </section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28748.958272698605!2d28.147268967839295!3d-25.750084364390137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHotels!5e0!3m2!1sen!2sza!4v1780087085325!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- FIXED: Map wrapped in map-container so CSS styles it correctly -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.56261207377!2d28.0440058!3d-25.7478676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sPretoria!5e0!3m2!1sen!2sza!4v1718000000000!5m2!1sen!2sza" allowfullscreen="" loading="lazy" title="SM Luxury Hair Salon Location on Google Maps"></iframe>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: Contact Form -->
+            <div class="contact-form">
+                <h2 class="section-title">Send us a message</h2>
+                
+                <form action="/action_page.php" method="get">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Name">Name:</label>
+                            <input type="text" id="Name" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Surname">Surname:</label>
+                            <input type="text" id="Surname" name="Surname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Email">Email:</label>
+                            <input type="email" id="Email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone-Number">Phone Number:</label>
+                            <input type="tel" id="Phone-Number" name="Phone-Number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Message">Your Message:</label>
+                        <textarea id="Message" name="Message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
 
-        <!-- RIGHT SIDE: Contact Form -->
-        <div class="contact-form">
-            <h2 class="section-title">Send us a message</h2>
+        <!-- ADDED: Frequently Asked Questions Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find quick answers to common questions about our services</p>
             
-            <form action="/action_page.php" method="get">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="Name">Name:</label>
-                        <input type="text" id="Name" name="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Surname">Surname:</label>
-                        <input type="text" id="Surname" name="Surname" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="Email">Email:</label>
-                        <input type="email" id="Email" name="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Phone-Number">Phone Number:</label>
-                        <input type="tel" id="Phone-Number" name="Phone-Number" required>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I book an appointment?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can book an appointment by clicking the "Book Now" button and filling out our online booking form. Alternatively, you can call us directly at 082 974 6593 during business hours.</p>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="Message">Your Message:</label>
-                    <textarea id="Message" name="Message" rows="5" required></textarea>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What are your prices for box braids?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our box braids start from R100 for short styles, R200 for medium, and R250 for normal length. Visit our Services page for a complete price list.</p>
+                    </div>
                 </div>
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do I need to wash my hair before coming in?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, please come with clean, dry hair for the best results. If you need a wash and conditioning treatment, we offer that service for R150.</p>
+                    </div>
+                </div>
 
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How long does a typical appointment take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Appointment times vary by service. Simple styles take 1-2 hours, while intricate braiding can take 3-5 hours. We'll confirm the estimated time when you book.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is your cancellation policy?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We understand that plans change. Please give us at least 24 hours notice if you need to cancel or reschedule your appointment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer consultations?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer free consultations to discuss your desired hairstyle and ensure we can meet your expectations. Book one through our contact form.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-   
     <footer>
         <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>
+        <p style="color: #d4af37; font-weight: 600;">📍 057 Qweens Street, Pretoria | 📞 082 974 6593</p>
+        <!-- ADDED: Social Media Links -->
+        <div style="margin: 1.5rem 0;">
+            <a href="https://facebook.com/smluxuryhair" target="_blank" rel="noopener" style="color: #c0c5d0; margin: 0 10px; font-size: 1rem; text-decoration: none;">📘 Facebook</a>
+            <a href="https://instagram.com/smluxurysalon" target="_blank" rel="noopener" style="color: #c0c5d0; margin: 0 10px; font-size: 1rem; text-decoration: none;">📷 Instagram</a>
+            <a href="https://wa.me/27829746593" target="_blank" rel="noopener" style="color: #c0c5d0; margin: 0 10px; font-size: 1rem; text-decoration: none;">💬 WhatsApp</a>
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="index.html">Booking</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Book Now</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </footer>
-     <script src="js/styles.js"></script>
-
+    
+    <!-- CHANGED: Added JavaScript file -->
+    <script src="js/styles.js"></script>
+</body>
 </html>
