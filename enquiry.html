@@ -3,23 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SM Luxury Hair Salon - Booking</title>
+    <!-- NEW: SEO Meta Tags -->
+    <meta name="description" content="Book your appointment at SM Luxury Hair Salon. Online booking available 24/7. Secure your preferred time slot now!">
+    <meta name="keywords" content="book hair appointment, online booking, hair salon Pretoria, schedule appointment">
+    <title>Book Appointment | SM Luxury Hair Salon - Online Booking</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- NEW: Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "SM Luxury Hair Salon",
+        "potentialAction": {
+            "@type": "ReserveAction",
+            "target": "https://mywebsite.com/enquiry.html",
+            "result": {
+                "@type": "Reservation",
+                "reservationFor": {
+                    "@type": "Service",
+                    "provider": {
+                        "@type": "HairSalon",
+                        "name": "SM Luxury Hair Salon"
+                    }
+                }
+            }
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <div class="logo">
             <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
             <h1>SM Luxury Hair Salon</h1>
         </div>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li class="current Page"><a href="enquiry.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="current-page">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 

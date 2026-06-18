@@ -1,22 +1,31 @@
-*{
+  /* NEW PART 3 ADDITIONS:
+   - Enhanced color contrast, sticky header, and professional gradients
+   - Added urgency banners and availability badges to reduce empty chairs
+   - Fixed map container for free iframe (no API key needed)
+   - Added Lightbox, Slideshow arrows, and Mobile menu styles
+   - Notification styles for AJAX form feedback
+   - ADDED: FAQ accordion styles for contact page
+   ============================================ */
+
+/* 1. CSS RESET & BASE STYLES */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
-  font-size: 16px; /* Base for rem calculations */
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base for rem calculations */
 }
 
-/*---------------------------------------------------------------------------------------------------
-                                           main boady
-------------------------------------------------------------------------------------------------- */
 body {
-    min-height: height 100vh;
+    min-height: 100vh; /* FIXED: removed invalid 'height' word */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #713c94, #614caf, #5d2f8f, #3c537c);/*the companies colour is blue and purple so the background will have a colour shift of sifferent shades of the two coulors together*/
-    background-size: 300% 300%;
-    animation: slowBackgroundShift 16s;
+    /* NEW: More professional gradient while keeping your blue/purple theme */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #5d2f8f 100%);
+    background-size: 400% 400%;
+    animation: slowBackgroundShift 20s ease infinite;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -24,44 +33,64 @@ body {
     line-height: 1.6;
 }
 
-/*sorce code from Coyier(2026)*/
+/* sorce code from Coyier(2026) */
 @keyframes slowBackgroundShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 } 
-/*------------------------------------------------------------------------------------------------------------------------------------------
-                                  Layout
---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* 2. Layout */
 main {
-  width: 90%;
-  max-width: 1100px;
-  margin: 2rem auto;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    width: 90%;
+    max-width: 1200px; /* NEW: Increased from 1100px for better spacing */
+    margin: 2rem auto; /* 2rem users relative units */
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stacks the child elements (sections) vertically in a column */
+    gap: 2.5rem; /* NEW: Increased gap for better breathing room */
 }
 
-h1 { font-size: 1.8rem; letter-spacing: 1px; }
-h2 { font-family: 'Playfair Display', 'Georgia', serif; font-size: 2rem; font-weight: 400; color: #ffd700; margin-bottom: 1.2rem; }
-h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #ffd700; margin-bottom: 0.8rem; }
-p { font-size: 1.1rem; color: #f1f5f9; margin-bottom: 1rem; }
-a { text-decoration: none; }
+h1 { font-size: 2rem; letter-spacing: 1px; font-weight: 700; }
+h2 { 
+    font-family: 'Playfair Display', 'Georgia', serif; /* Elegant font choice for a high-end look */
+    font-size: 2.2rem; /* Makes the section headings stand out clearly */
+    font-weight: 600; 
+    color: #ffd700; /* Bright gold color to match the branding theme */
+    margin-bottom: 1.5rem; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* NEW: Adds depth */
+}
+h3 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.5rem; 
+    color: #ffd700; 
+    margin-bottom: 1rem; 
+}
+p { 
+    font-size: 1.1rem; /* Good, readable body text size */
+    color: #f1f5f9; /* Off-white color so it's easy on the eyes against dark backgrounds */
+    margin-bottom: 1rem; 
+    line-height: 1.8; /* NEW: Better readability */
+}
+a { text-decoration: none; transition: all 0.3s ease; }
 
+/* Contnet section (FROSTED GLASS EFFECT) */
 section {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  text-align: center;
+    background: rgba(255, 255, 255, 0.08); /* NEW: Slightly more opaque for readability */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease; /* NEW: Hover effect */
 }
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------
-                         Header and navigations
--------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+section:hover {
+    transform: translateY(-5px); /* NEW: Lifts section on hover */
+}
+
+/* 3. Header and navigations */
 /* * Create a modern, "frosted glass" header.
  * - Flexbox layout aligns logo/links to opposite sides and centers them vertically.
  * - Semi-transparent dark background with a 10px blur effect on content behind it.
@@ -70,616 +99,705 @@ section {
  */
 header {
     width: 100%;
-    max-width:1200%;
+    max-width: 1200px; /* FIXED: changed from 1200% to 1200px */
     margin: 0;
     padding: 1.5rem 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #b38f2d, #d4af37, #f9e49b);
-    border-bottom: 2px solid #8a6d20;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #d4af37 0%, #f4e5c2 50%, #d4af37 100%); /* NEW: Richer gold */
+    border-bottom: 3px solid #b8941f;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    position: sticky; /* NEW: Keeps header visible while scrolling */
+    top: 0;
+    z-index: 1000;
 }
- 
 
-/* Aligns logo image and text horizontally with a gold glow( code sourced from w3schools)*/
+/* NEW: Mobile Menu Toggle Button */
+.nav-toggle {
+    display: none;
+    background: rgba(74, 60, 0, 0.2);
+    border: 2px solid #4a3c00;
+    color: #4a3c00;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+/* Aligns logo image and text horizontally with a gold glow( code sourced from w3schools) */
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
 }
-.logo img{
-    height: 50px;
-    width: Auto;
-    object-fit:contain;
-    filter: drop-shadow(0px 2px 8px rgba(212, 175, 55, 0.3))
+.logo img {
+    height: 60px; /* NEW: Slightly larger */
+    width: auto; /* FIXED: changed from Auto to auto */
+    object-fit: contain;
+    filter: drop-shadow(0px 3px 10px rgba(184, 148, 31, 0.5));
+    transition: transform 0.3s ease;
 }
+.logo img:hover { transform: scale(1.05); }
  
 .logo h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffd700;
-    /*yellow color is to hight the golden experence promised to our clients*/
+    letter-spacing: 1.5px;
+    color: #4a3c00; /* NEW: Darker gold for better contrast on light header */
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    /* yellow color is to hight the golden experence promised to our clients */
 }
+
 nav ul {
-    list-style: none;/*   remove the bullet points from the navigation */
-    display: flex;/* <-- align the links horizontally side-by-side */
-    gap: 2.5rem;
+    list-style: none; /* remove the bullet points from the navigation */
+    display: flex; /* <-- align the links horizontally side-by-side */
+    gap: 2rem;
 }
 
 nav a {
-    color: #000000;
+    color: #4a3c00; /* NEW: Darker for contrast */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
 }
+
+/* NEW: Underline animation on hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #4a3c00;
+    transition: width 0.3s ease;
+}
+nav a:hover::after { width: 80%; }
 
 nav a:hover {
-    color: #d4af37;/* A rich gold color for hover effect */
-}
-main {
-    width: 90%;            
-    max-width: 1100px;           
-    margin: 2rem auto;   /*2rem users relative units*/          
-    flex-direction: column;        /* Stacks the child elements (sections) vertically in a column */
-    gap: 2rem;                     
-}
-/* Contnet section (FROSTED GLASS EFFECT)*/
-section {
-    background: rgba(255, 255, 255, 0.06); 
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 3rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-/*ensuring my headings have a readeble font*/
-section h2 {
-    font-family: 'Playfair Display', 'Georgia', serif;  /* Elegant font choice for a high-end look */
-    font-size: 2.2rem;                    /* Makes the section headings stand out clearly */
-    font-weight: 400;                    
-    letter-spacing: 1px;                  
-    color: #ffd700;                       /* Bright gold color to match the branding theme */
-    margin-bottom: 1.2rem;                /* Pushes the paragraph text below it down a bit */
+    background: rgba(74, 60, 0, 0.1);
+    color: #2d2400;
+    /* A rich gold color for hover effect */
 }
 
-/* Section Paragraphs */
-section p {
-    font-size: 1.1rem;                    /* Good, readable body text size */
-    color: #f1f5f9;                       /* Off-white color so it’s easy on the eyes against dark backgrounds */
-    margin-bottom: 1rem;                  
+/* NEW: Current page indicator */
+nav a.current-page {
+    background: rgba(74, 60, 0, 0.2);
+    font-weight: 800;
 }
 
-
+/* 4. Footer */
 footer {
     width: 100%;                          
     padding: 3rem 2rem 2rem 2rem;         
-    background: rgba(10, 5, 18, 0.5);     /* Dark, semi-transparent background to ground the page */
-    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Faint line to separate footer from the main content */
+    background: rgba(15, 10, 30, 0.95); /* Dark, semi-transparent background to ground the page */
+    border-top: 2px solid rgba(212, 175, 55, 0.3); /* Faint line to separate footer from the main content */
     text-align: center;                  
-    margin-top: auto;                     /* Flexbox trick to force footer to the absolute bottom of the page */
+    margin-top: auto; /* Flexbox trick to force footer to the absolute bottom of the page */
+    box-shadow: 0 -5px 30px rgba(0,0,0,0.3);
 }
 
-
 footer p {
-    font-size: 0.9rem;                    /* Slightly smaller text for secondary information */
-    color: #8a8f98;                       /* Muted gray so it sits quietly in the background */
+    font-size: 0.95rem; /* Slightly smaller text for secondary information */
+    color: #a0a5b0; /* Muted gray so it sits quietly in the background */
+    margin-bottom: 1rem;
 }
 
 /* Footer Nav Links Container */
 footer nav {
-    margin-top: 1.2rem;                   
-    display: flex;                        /* Flexbox to line up the links */
-    justify-content: center;              /* Centers the link row horizontally */
-    gap: 2rem;                           
+    margin-top: 1.5rem;                   
+    display: flex; /* Flexbox to line up the links */
+    justify-content: center; /* Centers the link row horizontally */
+    gap: 2.5rem;                           
+    flex-wrap: wrap;
 }
 
 /* Footer Links */
 footer nav a {
-    color: #8a8f98;                       /* Muted gray by default to match the copyright */
+    color: #c0c5d0; /* Muted gray by default to match the copyright */
     text-decoration: none;                
-    font-size: 0.85rem;                   /* Keeps the links small and subtle */
-    transition: color 0.2s ease;          /* Smooth transition animation for the hover effect */
+    font-size: 0.9rem; /* Keeps the links small and subtle */
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition animation for the hover effect */
 }
 
 /* Footer Hover State */
 footer nav a:hover, footer nav a:focus {
-  color: #d4af37;
-}            
-           /* Changes to a warm golden color when hovered*/
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateY(-2px);
+} /* Changes to a warm golden color when hovered */
 
- /*---------------------------------------------------------------------------------------------------
-                                          Home  page
- -------------------------------------------------------------------------------------------------*/
- .btn {
-    display: block;/* would like the button to be centered and not inline */
-    width: fit-content;
-    margin: 1.5rem auto 2rem auto;
-    background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f8e49d 100%);
-    color: #0f061b;
-    text-decoration: none;/* Removes underline from links */
-    padding: 1rem 3rem;
-    font-weight: 700;
-    font-size: 1rem;
+/* 5. Buttons (Call to Action) */
+.btn {
+    display: inline-block; /* would like the button to be centered and not inline */
+    width: auto;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #ffd700 100%); /* NEW: Vibrant gradient to encourage booking */
+    color: #ffffff;
+    text-decoration: none; /* Removes underline from links */
+    padding: 1.3rem 3.5rem;
+    font-weight: 800;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+    letter-spacing: 2px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+    border: 3px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite; /* NEW: Draws attention to book now */
 }
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(245, 87, 108, 0.6);
     filter: brightness(1.1);
 }
 
-section > img {
-    width: 100%;
-    max-width: 650px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.btn-secondary { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); 
+    animation: none; 
 }
-/* SLIDESHOW STYLES */
-.slideshow {
-    max-width: 800px;
-    margin: 2rem auto;
-    border-radius: 12px;
+
+@keyframes pulse { 
+    0% { box-shadow: 0 0 0 0 rgba(56, 239, 125, 0.4); } 
+    70% { box-shadow: 0 0 0 15px rgba(56, 239, 125, 0); } 
+    100% { box-shadow: 0 0 0 0 rgba(56, 239, 125, 0); } 
+}
+
+/* NEW: Urgency Banner to reduce empty chairs */
+.urgency-banner {
+    background: linear-gradient(135deg, #ff6b6b, #f5576c);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+}
+
+/* 6. Slideshow Styles (FIXED & WORKING) */
+.slideshow-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     position: relative;
     background: #000;
+    border: 3px solid rgba(212, 175, 55, 0.3);
 }
 
-.slide {
-    display: none;
-    width: 100%;
-    height: auto;
-}
-
-.slide.active {
-    display: block;
-    animation: fadeSlide 1.2s ease;
-}
-
+.slide { display: none; width: 100%; }
+.slide.active { display: block; animation: fadeSlide 1.5s ease; }
+.slide img { width: 100%; height: 500px; object-fit: cover; }
 
 @keyframes fadeSlide {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
+    from { opacity: 0.4; transform: scale(1.02); }
+    to { opacity: 1; transform: scale(1); }
 }
 
-.slideshow-dots {
-    text-align: center;
-    margin: 1rem 0;
+/* NEW: Slideshow navigation arrows */
+.slideshow-prev, .slideshow-next {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: rgba(212, 175, 55, 0.8); color: #000; border: none;
+    padding: 1rem 1.2rem; font-size: 1.5rem; cursor: pointer;
+    border-radius: 50%; transition: all 0.3s ease; z-index: 10;
 }
+.slideshow-prev:hover, .slideshow-next:hover { background: rgba(212, 175, 55, 1); transform: translateY(-50%) scale(1.1); }
+.slideshow-prev { left: 20px; } .slideshow-next { right: 20px; }
 
+.slideshow-dots { text-align: center; margin: 1.5rem 0; padding: 0 1rem; }
 .dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 6px;
-    background-color: #666;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    height: 15px; width: 15px; margin: 0 8px;
+    background-color: rgba(255,255,255,0.4); border-radius: 50%;
+    display: inline-block; cursor: pointer; transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
+.dot.active, .dot:hover { background-color: #ffd700; transform: scale(1.3); border-color: #fff; }
 
-.dot.active, .dot:hover {
-    background-color: #d4af37;
-    transform: scale(1.2);
-}
-/*-------------------------------------------------------------------------------------------------------
-                                           about page
-------------------------------------------------------------------------------------------------------------*/
+/* 7. About Page (Split Section & Team) */
 .split-section {
     display: flex;
     flex-direction: row; /* Puts items side-by-side */
     align-items: center; /* Vertically centers them */
-    gap: 2.5rem;
+    gap: 3rem;
     text-align: left; /* Overrides the default section center alignment */
+    padding: 3rem;
 }
 .split-text {
     flex: 1;
-    min-width: 280px;/* want that the  text box from squeezing too narrow on small screens */
+    min-width: 300px; /* want that the text box from squeezing too narrow on small screens */
 }
 
 .split-section .vision-img {
     width: 100%;
-    max-width: 320px;  
-    max-height: 420px; 
+    max-width: 400px;  
+    max-height: 500px; 
     object-fit: cover; 
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-       
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease;
 }
-/*team grid layout*/
+.split-section .vision-img:hover { transform: scale(1.03); }
+
+/* team grid layout */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 2rem;
-    margin-top: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2.5rem;
+    margin-top: 3rem;
 }
 
 .team-card {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
-    border-radius: 12px;
-    border-bottom: 3px solid #d4af37; 
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 20px;
+    border-bottom: 4px solid #d4af37; 
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
 }
+.team-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
 
 .team-card img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%; 
-    border: 2px solid rgba(212, 175, 55, 0.5); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 4px solid rgba(212, 175, 55, 0.6); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
 }
+.team-card img:hover { transform: scale(1.1); }
 
 .team-card p {
-    font-size: 0.95rem;
-    color: #e2e8f0;
-    line-height: 1.5;
+    font-size: 1rem;
+    color: #f0f0f0;
+    line-height: 1.6;
     margin: 0;
 }
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------
-                    servicepage
-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* 8. Services Page */
 .service-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    padding: 1rem;
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  padding: 1.5rem;
-  width: 320px;
-  text-align: center;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 350px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
-
-.service-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(212, 175, 55, 0.4);
-}
+.service-card:hover { transform: translateY(-10px); border-color: rgba(212, 175, 55, 0.6); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
 
 .main-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
 }
+.service-card:hover .main-img { transform: scale(1.05); }
 
 .price-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-  color: #e2e8f0;
+    list-style: none;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    color: #f0f0f0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
+.price-list li { margin: 0.8rem 0; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
+.price-list li:last-child { border-bottom: none; }
+.price-list li strong { color: #ffd700; font-size: 1.1rem; }
 
-.price-list li { margin: 0.5rem 0; font-weight: 500; }
-
-.gallery-toggle { margin: 1rem 0; cursor: pointer; }
+.gallery-toggle { margin: 1.5rem 0; cursor: pointer; }
 .gallery-toggle summary {
-  color: #d4af37; font-weight: 600; text-decoration: underline;
-  list-style: none; transition: color 0.3s;
+    color: #ffd700; font-weight: 700; text-decoration: none;
+    list-style: none; transition: all 0.3s;
+    padding: 0.5rem 1rem; background: rgba(212, 175, 55, 0.2); border-radius: 8px; display: inline-block;
 }
 .gallery-toggle summary::-webkit-details-marker { display: none; }
-.gallery-toggle summary:hover { color: #ffd700; }
+.gallery-toggle summary:hover { background: rgba(212, 175, 55, 0.3); color: #fff; }
 
-.gallery-toggle[open] .extra-images { animation: slideDown 0.4s ease forwards; }
+.gallery-toggle[open] .extra-images { animation: slideDown 0.5s ease forwards; }
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .extra-images {
-  display: flex; gap: 0.8rem; justify-content: center; margin-top: 1rem;
+    display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;
 }
-
 .extra-images img {
-  flex: 1; width: 0; height: 100px; object-fit: cover;
-  border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);
+    flex: 1; width: 0; height: 120px; object-fit: cover;
+    border-radius: 10px; border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer; transition: transform 0.3s ease;
 }
+.extra-images img:hover { transform: scale(1.1); border-color: #ffd700; }
 
 .btn-book {
-  display: inline-block; margin-top: 1.5rem;
-  background: linear-gradient(135deg, #b38f2d, #d4af37);
-  color: #0f051d; padding: 0.8rem 1.5rem;
-  border-radius: 25px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1px; transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block; margin-top: 2rem;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: #fff; padding: 1rem 2.5rem;
+    border-radius: 30px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.5px; transition: all 0.3s;
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
 }
-.btn-book:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); }
+.btn-book:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 12px 35px rgba(245, 87, 108, 0.6); }
 
-/* -----------------------------------------------------------------------------------------------------------------------------------------------
-                                                Booking Form Styles 
----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*booking form made with the intent that it has to blend with the backgoud of the form*/
-form.contact-form{
-    background: #fff;
-    border-radius: 12px;
-    padding: 40px;
-    max-width: 800px;
+/* NEW: Service Search Box */
+.service-search {
+    width: 100%; max-width: 600px; margin: 2rem auto; padding: 1.2rem 2rem;
+    border: 2px solid rgba(212, 175, 55, 0.4); border-radius: 50px;
+    font-size: 1.1rem; background: rgba(255, 255, 255, 0.15); color: #fff;
+    transition: all 0.3s ease; text-align: center;
+}
+.service-search:focus { outline: none; border-color: #ffd700; background: rgba(255, 255, 255, 0.25); box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+.service-search::placeholder { color: rgba(255, 255, 255, 0.7); }
+
+/* 9. Forms (Booking & Contact) */
+form.contact-form, .contact-form {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 900px;
     margin: 2rem auto;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-    color:#333;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    color: #333;
+    border: 3px solid rgba(212, 175, 55, 0.3);
 }
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5px;
-    margin-bottom: 1.5px;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
-.form-group {
-    margin-bottom: 20px;
-}
- label {
+.form-group { margin-bottom: 1.5rem; }
+
+label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #333;
-    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    color: #444;
+    font-size: 1rem;
 }
- input[type="text"],
-input[type="email"],
- input[type="tel"],
-select,
- textarea {
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     width: 100%;
-    padding: 14px 16px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
     font-size: 1rem;
     transition: all 0.3s ease;
-    background-color: #fafafa;
+    background-color: #f8f9fa;
     box-sizing: border-box;
+    font-family: inherit;
 }
- input:focus,
-select:focus,
-textarea:focus {
+
+input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: #d4af37;
     background-color: #fff;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-}
-textarea {
-    resize: vertical;
-    font-family: inherit;
-}
-.form-submit {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-}
-form button[type="submit"] {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f9e49b 100%);
-    color: #0f051d;
-    border: none;
-    padding: 14px 32px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-
-}
-form button[type="submit"]:hover {
+    box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.15);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
-form button[type="submit"] svg {
-    transition: transform 0.3s ease;
+textarea { resize: vertical; min-height: 120px; }
+
+.form-submit { display: flex; justify-content: center; margin-top: 2rem; }
+
+form button[type="submit"], .contact-form button[type="submit"] {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: #fff; border: none; padding: 1.2rem 3rem;
+    font-size: 1.1rem; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 1.5px; border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+    cursor: pointer;
+}
+form button[type="submit"]:hover, .contact-form button[type="submit"]:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(245, 87, 108, 0.6);
 }
 
-form button[type="submit"]:hover svg {
-    transform: translate(3px, -3px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+/* Form validation states */
+input.invalid, textarea.invalid, select.invalid {
+    border-color: #ff4444 !important;
+    background-color: rgba(255, 68, 68, 0.05);
+}
+input.valid, textarea.valid, select.valid {
+    border-color: #00C851 !important;
+    background-color: rgba(0, 200, 81, 0.05);
 }
 
-    /* -----------------------------------------------------------------------------------------------------
-                                        Contact Page Layout
-    ------------------------------------------------------------------------------------------------------ */
-    /* Main layout wrapper for the contact page splitting it into two columns */
+/* 10. Contact Page Layout */
 .contact-container {
     display: grid;
-    /* Left column (Contact Info) takes 1 part, right column (Form) takes 1.5 parts of space */
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 20px;
-}
-    /* Left Side - Contact Info */
-    /*want my contact information on the write and form left hand site for readebility*/
-.contact-info {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-}
-
-.contact-info h2 {
-    color: #d4af37;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
-}
-/* Container for individual contact details*/
-.contact-info section {
-    margin-bottom: 2rem;
-}
-/* Container for individual contact details*/
-.contact-info section:last-child {
-    margin-bottom: 0;
-}
-.info-item,
-.hours-item {
-    margin-bottom: 1.2rem;
-}
-
-.info-item strong,
-.hours-item strong {
-    display: block;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.info-item p,
-.hours-item p {
-    color: #666;
-    margin: 0;
-    font-size: 1rem;
-}
-/* Right Side - Form */
-.contact-form {
-    background: #fff;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-}
-
-.contact-form .section-title {
-    margin-top: 0;
-    margin-bottom: 2rem;
-}
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: #333;
-}
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
     width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background-color: #fafafa;
-    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.contact-form{
-    background: linen;
+.contact-info {
+    background: rgba(255,255,255,0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
 }
+.contact-info h2 { color: #ffd700; border-bottom: 2px solid rgba(212,175,55,0.3); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+.info-item, .hours-item { margin-bottom: 1.5rem; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 10px; }
+.info-item strong, .hours-item strong { display: block; color: #fff; font-weight: 700; margin-bottom: 0.5rem; }
+.info-item p, .hours-item p { color: #f1f5f9; margin: 0; }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #d4af37;
-    background-color: #fff;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-}
-
-.contact-form textarea {
-    resize: vertical;
-    font-family: inherit;
-}
-.contact-form button[type="submit"] {
-    background: linear-gradient(135deg, #b38f2d 0%, #d4af37 50%, #f9e49b 100%);
-    color: #0f051d;
-    border: none;
-    padding: 14px 40px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-}
-
-.contact-form button[type="submit"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-}
-.contact-container h3 {
-    color: #000000;      
-    font-weight: bold;   /* Make the text bold */
-    font-size: 24px;     
-}
-
+/* FIXED: Map Container for free iframe (No API Key needed) */
 .map-container {
     width: 100%;
-    max-width: 1100px; /* Matches your main container size */
-    margin: 2rem auto;
-    border-radius: 12px;
-    overflow: hidden; /* Cleans up the map corners to match the border radius */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(212, 175, 55, 0.3);
+    background: #fff;
+    margin-top: 2rem;
 }
-
 .map-container iframe {
     width: 100% !important; /* Forces the map to fill the container responsively */
-    height: 400px;          /* Adjust the height to your preference */
+    height: 400px !important; /* Adjust the height to your preference */
     display: block;
-}
-.map-container iframe { width: 100% !important; height: 400px; display: block; border: none; }
-@media (max-width: 1024px) {
-  .contact-container { grid-template-columns: 1fr; }
-  .split-section { flex-direction: column; text-align: center; }
-  .split-text { min-width: 100%; }
+    border: none;
 }
 
-/* Mobile responsive*/
-/*sorce Coyier(2026)*/
+/* 11. Lightbox Gallery (NEW for Part 3) */
+.lightbox {
+    display: none; position: fixed; z-index: 10000; left: 0; top: 0;
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95);
+}
+.lightbox.active { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.lightbox-img { max-width: 90%; max-height: 80vh; object-fit: contain; border-radius: 10px; box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6); border: 3px solid rgba(212, 175, 55, 0.5); }
+.lightbox-caption { color: #fff; margin-top: 1.5rem; font-size: 1.2rem; text-align: center; background: rgba(0,0,0,0.6); padding: 1rem 2rem; border-radius: 10px; }
+.lightbox-close { position: absolute; top: 20px; right: 40px; color: #ffd700; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; }
+
+/* 12. Notification Styles (NEW for AJAX feedback) */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    z-index: 10001;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: slideInRight 0.5s ease;
+}
+.notification.success {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+.notification.error {
+    background: linear-gradient(135deg, #ff6b6b, #f5576c);
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(400px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutRight {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(400px); opacity: 0; }
+}
+
+/* ============================================
+   13. FAQ SECTION STYLES (NEW for Contact Page)
+   ============================================ */
+
+.faq-section {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.faq-section h2 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.faq-section > p {
+    color: #f1f5f9;
+    margin-bottom: 2.5rem;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(212, 175, 55, 0.5);
+    transform: translateX(5px);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: #ffd700;
+}
+
+.faq-question[aria-expanded="true"] {
+    background: rgba(212, 175, 55, 0.2);
+    color: #ffd700;
+}
+
+.faq-icon {
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    color: #d4af37;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.faq-answer p {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin: 0;
+    color: #f1f5f9;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+/* 14. Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container { grid-template-columns: 1fr; }
+    .split-section { flex-direction: column; text-align: center; }
+    .split-text { min-width: 100%; }
+}
+
+/* Mobile responsive sorce Coyier(2026) */
 @media (max-width: 768px) {
-  header { flex-direction: column; gap: 1rem; padding: 1rem; }
-  nav ul { flex-direction: column; align-items: center; gap: 1rem; }
-  
-  .service-container { flex-direction: column; align-items: center; }
-  .service-card { width: 90%; }
-  .extra-images { flex-direction: column; align-items: center; }
-  .extra-images img { width: 80%; height: auto; }
-  
-  .form-row { grid-template-columns: 1fr; }
-  form, .contact-form, .contact-info { padding: 1.5rem; }
-  .contact-container { padding: 0 1rem; }
+    .nav-toggle { display: block; } /* NEW: Show mobile menu button */
+    header { flex-direction: column; gap: 1rem; padding: 1rem; }
+    
+    nav ul { 
+        display: none; /* NEW: Hidden by default on mobile */
+        width: 100%; 
+        flex-direction: column; 
+        padding: 1.5rem; 
+        background: linear-gradient(135deg, #d4af37, #f4e5c2); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+        gap: 0.5rem;
+    }
+    nav ul.active { display: flex; } /* NEW: Shown when toggled */
+    nav a { width: 100%; text-align: center; }
+    
+    .service-container { flex-direction: column; align-items: center; }
+    .service-card { width: 90%; }
+    .extra-images { flex-direction: column; align-items: center; }
+    .extra-images img { width: 80%; height: auto; }
+    
+    .form-row { grid-template-columns: 1fr; }
+    form, .contact-form, .contact-info { padding: 2rem; }
+    .contact-container { padding: 0 1rem; }
+    .slide img { height: 300px; }
+    .notification { 
+        left: 10px; 
+        right: 10px; 
+        max-width: none; 
+    }
+    
+    /* ADDED: FAQ responsive styles */
+    .faq-section {
+        padding: 2rem 1.5rem;
+        margin: 2rem 1rem;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+    
+    .faq-answer p {
+        padding: 0 1.2rem 1.2rem 1.2rem;
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
-  h2 { font-size: 1.6rem; }
-  h3 { font-size: 1.2rem; }
-  .btn, .btn-book { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    .btn, .btn-book { padding: 1rem 2rem; font-size: 1rem; }
 }

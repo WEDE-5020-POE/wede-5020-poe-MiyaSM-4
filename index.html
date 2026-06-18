@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>SM Luxury Hair Salon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGED: Better SEO meta tags -->
+    <meta name="description" content="SM Luxury Hair Salon - Premium hair braiding, twists & styling in Pretoria. Book online now to secure your spot and avoid empty chair wait times!">
+    <meta name="keywords" content="hair salon, box braids, cornrows, twists, Pretoria, book online, hair braiding">
+    <title>SM Luxury Hair Salon | Book Online - Premium Hair Services Pretoria</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- ADDED: Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- NEW: Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "SM Luxury Hair Salon",
+        "image": "img/logo.JPG",
+        "description": "Premium hair braiding, twists, and styling services in Pretoria. Book online for a luxurious hair care experience.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "057 Qweens Street",
+            "addressLocality": "Pretoria",
+            "postalCode": "0122",
+            "addressCountry": "ZA"
+        },
+        "telephone": "+27829746593",
+        "priceRange": "R100 - R350"
+    }
+    </script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
-      <h1>SM Luxury Hair Salon</h1>
-    </div>
-    <nav>
-      <ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="enquiry.html">Booking</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- CHANGED: Added mobile toggle button -->
+    <header>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
+            <h1>SM Luxury Hair Salon</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="current-page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
   <main>
         <!-- CHANGED: Enhanced hero section with urgency -->

@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SM Luxury Hair Salon - Services</title>
+    <!-- NEW: SEO Meta Tags -->
+    <meta name="description" content="Browse our hair services: Box braids, cornrows, twists, crochet braids & more. Competitive prices starting from R100. Book online today!">
+    <meta name="keywords" content="box braids prices, cornrows Pretoria, hair twists, crochet braids, faux locs, hair salon services">
+    <title>Our Services | SM Luxury Hair Salon - Prices & Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- NEW: Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "SM Luxury Hair Salon",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Hair Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Box Braids",
+                        "description": "Professional box braiding services"
+                    },
+                    "price": "100.00",
+                    "priceCurrency": "ZAR"
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <div class="logo">
             <a href="index.html"><img src="img/logo.JPG" alt="SM Luxury Hair Salon Logo"></a>
             <h1>SM Luxury Hair Salon</h1>
@@ -15,9 +45,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="services.html" class="current-page">service</a></li>
-                <li><a href="enquiry.html">Booking</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="current-page">Services</a></li>
+                <li><a href="enquiry.html">Book Now</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
