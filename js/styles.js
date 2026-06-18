@@ -93,4 +93,201 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'auto';
         }
     });
+     // ========================================
+    // 6. SCROLL ANIMATIONS
+    // ========================================
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .service-card, .team-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+      // ========================================
+    // 4. AJAX FORM SUBMISSION (REQUIRED FOR PART 3)
+    // ========================================
+    // This submits forms without page reload using Fetch API
+    // Provides better user experience as required by assignment
+
+    const bookingForm = document.getElementById('bookingForm');
+    const contactForm = document.querySelector('.contact-form form');
+
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', handleBookingSubmit);
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleContactSubmit);
+    }
+
+    // Handle Booking Form Submission with AJAX
+    async function handleBookingSubmit(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        // Validate first
+        if (!validateForm(bookingForm)) {
+            showNotification('Please fill in all required fields correctly.', 'error');
+            return;
+        }
+        
+        const formData = new FormData(bookingForm);
+        const data = Object.fromEntries(formData);
+        
+        try {
+            // Show loading state
+            const submitBtn = bookingForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '⏳ Booking...';
+            submitBtn.disabled = true;
+            
+            // SIMULATED AJAX REQUEST (Replace with actual endpoint when available)
+            // In production, this would be: 
+            // await fetch('BOOKING-Handler.php', { method: 'POST', body: formData })
+            await simulateAJAXRequest();
+            
+            // Success
+            showNotification('✅ Booking submitted successfully! We will confirm your appointment shortly.', 'success');
+            bookingForm.reset();
+            
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            
+        } catch (error) {
+            showNotification('❌ Error submitting booking. Please try again or call us.', 'error');
+            console.error('Booking Error:', error);
+        }
+    }
+
+    // Handle Contact Form Submission with AJAX
+    async function handleContactSubmit(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        // Validate first
+        if (!validateForm(contactForm)) {
+            showNotification('Please fill in all fields correctly.', 'error');
+            return;
+        }
+        
+        const formData = new FormData(contactForm);
+        
+        try {
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '⏳ Sending...';
+            submitBtn.disabled = true;
+            
+            // SIMULATED AJAX REQUEST
+            // In production: await fetch('/contact-handler.php', { method: 'POST', body: formData })
+            await simulateAJAXRequest();
+            
+            // Success
+            showNotification('✅ Message sent successfully! We will get back to you soon.', 'success');
+            contactForm.reset();
+            
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            
+        } catch (error) {
+            showNotification('❌ Error sending message. Please try again.', 'error');
+            console.error('Contact Error:', error);
+        }
+    }
+
+    // Helper function to validate forms
+    function validateForm(form) {
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('[required]');
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.style.borderColor = 'red';
+                field.classList.add('invalid');
+                field.classList.remove('valid');
+            } else {
+                field.style.borderColor = '#e0e0e0';
+                field.classList.remove('invalid');
+                field.classList.add('valid');
+                
+                // Validate email format
+                if (field.type === 'email') {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value)) {
+                        isValid = false;
+                        field.style.borderColor = 'red';
+                        field.classList.remove('valid');
+                        field.classList.add('invalid');
+                    }
+                }
+                
+                // Validate phone (at least 10 digits)
+                if (field.type === 'tel') {
+                    const phoneDigits = field.value.replace(/\D/g, '');
+                    if (phoneDigits.length < 10) {
+                        isValid = false;
+                        field.style.borderColor = 'red';
+                        field.classList.remove('valid');
+                        field.classList.add('invalid');
+                    }
+                }
+            }
+        });
+        
+        return isValid;
+    }
+
+    // Simulate AJAX request (REMOVE THIS when you have a real backend)
+    function simulateAJAXRequest() {
+        return new Promise(resolve => setTimeout(resolve, 1500));
+    }
+
+    // Notification system for error handling
+    function showNotification(message, type) {
+        // Remove existing notifications
+        const existing = document.querySelector('.notification');
+        if (existing) existing.remove();
+        
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.animation = 'slideOutRight 0.5s ease';
+            setTimeout(() => notification.remove(), 500);
+        }, 5000);
+    }
+
+    // ========================================
+    // 5. SERVICE SEARCH FILTER
+    // ========================================
+    const searchInput = document.getElementById('serviceSearch');
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            document.querySelectorAll('.service-card').forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(searchTerm) ? 'block' : 'none';
+            });
+        });
+    }
+
  });
