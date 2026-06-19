@@ -27,14 +27,6 @@ Service: A gallery of all hairstyles including their prices.<br>
 Enquiry: will contain a Functional form for service inquiries or appointments.<br>
 Contact: were you‘ll find the business contact information and the map of were you can locate the business.<br>
 
-
-
-                                                                                                               
-
-
-
-
-
 ## Website Goals and Objectives
 
 Goal<br>
@@ -56,6 +48,17 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 | **Week 7** | CSS Styling & Desktop Layout | • Implement comprehensive CSS styling.<br>• Organize page layouts and design the desktop viewport solution. |
 | **Week 8** | Responsive Design | • Implement media queries.<br>• Optimize fluid layouts to ensure full responsiveness across tablet and mobile displays. |
 | **Week 9** <br>*(29/05/2026)* | Final Submission | • **Submit Part 2** (Final polished web solution). |
+
+## Part 2
+##  Responsive Design Screenshots
+The website has been tested across desktop, tablet, and mobile viewports using browser developer tools (`F12` → Device Toolbar).
+
+| Desktop (≥1200px) | Tablet (~768px) | Mobile (~375px) |
+|-------------------|-----------------|-----------------|
+| <img width="1896" height="932" alt="image" src="https://github.com/user-attachments/assets/703d03c5-6d4f-4291-8035-c031c41aead7" /> | <img width="967" height="910" alt="Tablet" src="https://github.com/user-attachments/assets/e4f70e47-7475-400f-9ee7-9632cef775f0" />
+ |<img width="679" height="815" alt="mobile" src="https://github.com/user-attachments/assets/9fae08b8-aa23-4867-900d-79743a519e76" />
+
+
 
 ## Part 3 Enhancements
 In part 3 I focused on enhancing functionality with :
