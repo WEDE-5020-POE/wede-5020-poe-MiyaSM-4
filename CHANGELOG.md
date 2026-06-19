@@ -19,7 +19,7 @@ All notable changes to this project will be documented in this file.
 
 - ## Part 3 Enhancements (Current Submission)
 
-*Detailed record of new features, JavaScript integration, and SEO optimizations implemented for Part 3.*
+**Added
 
 **JavaScript & Interactivity:**
 *   **AJAX Form Submission:** Implemented asynchronous form submission for both `enquiry.html` and `contact.html` using the Fetch API. Forms now submit without page reloads, providing a smoother user experience.
@@ -57,7 +57,6 @@ All notable changes to this project will be documented in this file.
 
 - Invalid nested `<a>` tags across all pages (e.g., `<a class="current"><a href="...">` → corrected to single valid link structure)
 - Critical CSS syntax error: `max-width: 1200%` corrected to `max-width: 1200px` in header styling
-- Broken/unclosed HTML elements and inconsistent casing (`<Header>`/`< Footer>`/`<Section>` → `<header>`/`<footer>`/`<section>`) for W3C validation compliance
 - Missing closing braces and overlapping media query rules that broke responsive form/grid layouts on smaller viewports
 - Incorrect `enquiry.html` references updated to `booking.html` for consistent internal routing and user experience
 - Removed concatenated page blocks and ensured each HTML file contains only its respective content, header, and footer
