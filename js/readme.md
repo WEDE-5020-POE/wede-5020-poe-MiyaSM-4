@@ -30,5 +30,10 @@ In part 3 I focused on enhancing functionality with :
 *   **Social Media Integration:** Added social media links .
 *   **Local SEO:** Optimized for local search with schema markup, Google Maps integration, and local contact information.
 
-### Refrence list
+### Reference list
+
+*  Coyier, C. (2026). *Modern JavaScript Patterns*. Available at: https://css-tricks.com [Accessed 2026].
+* Google Search Central (2026) Local Business structured data. Available at: google.com (Accessed: 19 June 2026).
+* W3Schools (2026) Java Tutorial. Available at: https://www.w3schools.com/java/ (Accessed: 19 June 2026).
+
 
