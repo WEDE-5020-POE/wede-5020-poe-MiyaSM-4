@@ -17,9 +17,8 @@ All notable changes to this project will be documented in this file.
 - Updated layout architecture to consistently use Flexbox (header, nav, split-section) and CSS Grid (team-grid, service-container, contact-container) for desktop structure (Rubric 2.4)
 - Standardized project structure into 5 separate, validated HTML files: `index.html`, `about.html`, `services.html`, `booking.html`, `contact.html`
 
-- ## 📝 Changelog
+- ## Part 3 Enhancements (Current Submission)
 
-### Part 3 Enhancements (Current Submission)
 *Detailed record of new features, JavaScript integration, and SEO optimizations implemented for Part 3.*
 
 **JavaScript & Interactivity:**
