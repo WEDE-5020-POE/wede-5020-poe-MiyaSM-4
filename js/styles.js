@@ -14,6 +14,8 @@
    - Error handling and notifications
    - Service search filter
    - FAQ accordion functionality
+   - NEW: Cost and availability response for booking form
+   - NEW: Email compilation and sending for contact form
    ============================================ */
 
 // Wait for HTML document to be fully loaded before running JavaScript
@@ -232,8 +234,45 @@ document.addEventListener('DOMContentLoaded', function() {
             // await fetch('BOOKING-Handler.php', { method: 'POST', body: formData })
             await simulateAJAXRequest();
             
-            // Show success message
-            showNotification('✅ Booking submitted successfully! We will confirm your appointment shortly.', 'success');
+            // ========================================
+            // NEW: Generate cost and availability response
+            // ========================================
+            // Source: W3Schools (2026) - JavaScript Objects and Arrays
+            // This provides the user with a response related to cost and availability
+            // as required by the assignment
+            
+            const serviceType = document.getElementById('Service-type').value;
+            const preferredTime = document.getElementById('prefered_time').value;
+            
+            // Price list for different services
+            const servicePrices = {
+                'haircut': { price: 'R150 - R250', duration: '1 - 1.5 hours' },
+                'box-braids': { price: 'R100 - R250', duration: '3 - 5 hours' },
+                'cornrows': { price: 'R100 - R150', duration: '1 - 2 hours' },
+                'twists': { price: 'R180 - R250', duration: '2 - 4 hours' },
+                'crochet': { price: 'R250 - R320', duration: '2 - 3 hours' },
+                'faux-locs': { price: 'R250 - R300', duration: '3 - 5 hours' },
+                'natural-care': { price: 'R150 - R250', duration: '1 - 2 hours' }
+            };
+            
+            // Check if service exists in price list
+            let serviceInfo = '';
+            if (servicePrices[serviceType]) {
+                const service = servicePrices[serviceType];
+                serviceInfo = '<br><br>';
+                serviceInfo += '💰 <strong>Estimated Cost:</strong> ' + service.price + '<br>';
+                serviceInfo += '⏰ <strong>Availability:</strong> ' + preferredTime + ' slot is available!<br>';
+                serviceInfo += '⏱️ <strong>Estimated Duration:</strong> ' + service.duration + '<br>';
+                serviceInfo += '📞 <strong>Confirmation:</strong> We will call you within 24 hours to confirm.';
+            } else {
+                serviceInfo = '<br><br>';
+                serviceInfo += '💰 <strong>Cost:</strong> To be discussed during consultation<br>';
+                serviceInfo += '⏰ <strong>Availability:</strong> ' + preferredTime + ' slot is available!<br>';
+                serviceInfo += '📞 <strong>Confirmation:</strong> We will call you within 24 hours to confirm.';
+            }
+            
+            // Show success message with cost and availability information
+            showNotification('✅ Booking submitted successfully!' + serviceInfo, 'success');
             bookingForm.reset();
             
             // Reset button
@@ -270,8 +309,43 @@ document.addEventListener('DOMContentLoaded', function() {
             // In production: await fetch('/contact-handler.php', { method: 'POST', body: formData })
             await simulateAJAXRequest();
             
-            // Show success message
-            showNotification('✅ Message sent successfully! We will get back to you soon.', 'success');
+            // ========================================
+            // NEW: Compile form data into email
+            // ========================================
+            // Source: W3Schools (2026) - JavaScript String Methods
+            // This compiles the validated information into an email
+            // and allows the customer to send it to the recipient
+            // as required by the assignment
+            
+            const name = document.getElementById('Name').value;
+            const surname = document.getElementById('Surname').value;
+            const email = document.getElementById('Email').value;
+            const phone = document.getElementById('Phone-Number').value;
+            const message = document.getElementById('Message').value;
+            
+            // Compile email subject
+            const emailSubject = 'Contact Form: ' + name + ' ' + surname;
+            
+            // Compile email body with all form information
+            const emailBody = 'Name: ' + name + ' ' + surname + '%0D%0A' +
+                             'Email: ' + email + '%0D%0A' +
+                             'Phone: ' + phone + '%0D%0A' +
+                             '%0D%0A' +
+                             'Message:%0D%0A' + message;
+            
+            // Create mailto link to send email to salon
+            // Source: W3Schools (2026) - HTML Links
+            const mailtoLink = 'mailto:info@smLuxuryHairSalon.com?subject=' + 
+                              encodeURIComponent(emailSubject) + '&body=' + emailBody;
+            
+            // Show success message with email compilation and send link
+            const successMessage = '✅ Message compiled successfully!<br><br>' +
+                                  '📧 <strong>Recipient:</strong> info@smLuxuryHairSalon.com<br>' +
+                                  '👤 <strong>From:</strong> ' + name + ' ' + surname + '<br><br>' +
+                                  '<a href="' + mailtoLink + '" style="color: #ffd700; text-decoration: underline; font-weight: bold;">' +
+                                  '📤 Click here to send email now</a>';
+            
+            showNotification(successMessage, 'success');
             contactForm.reset();
             
             // Reset button
@@ -351,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create new notification element
         const notification = document.createElement('div');
         notification.className = 'notification ' + type;
-        notification.textContent = message;
+        notification.innerHTML = message; // Changed from textContent to innerHTML to support HTML links
         
         document.body.appendChild(notification);
         
