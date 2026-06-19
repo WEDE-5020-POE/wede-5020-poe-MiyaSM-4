@@ -93,9 +93,14 @@ In part 3 I focused on enhancing functionality with :
 
 ## References
 Coyier, C. (2026) A Complete Guide to CSS Flexbox. Available at: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ (Accessed: 30 May 2026).<br>
-Host Africa (2026) Web hosting in South Africa. Available at: https://hostafrica.co.za/web-hosting/ (Accessed: 11 April 2026)<br>
-W3Schools (2026) HTML  Tag. Available at: https://www.w3schools.com/tags/tag_option.asp (Accessed: 20 April 2026).<br>
-Thriving Stylist (2025) Unexpected challenges salon owner’s face. Available at: https://thrivingstylist.com/blog/unexpected-challenges-salon-owners-face/ 
-(Accessed: 5 April 2026)    
+*  Coyier, C. (2026). *Modern JavaScript Patterns*. Available at: https://css-tricks.com [19Accessed 2026].
+* Google Search Central (2026) Local Business structured data. Available at: google.com (Accessed: 19 June 2026).
+* Host Africa (2026) Web hosting in South Africa. Available at: https://hostafrica.co.za/web-hosting/ (Accessed: 11 April 2026)
+* W3Schools (2026) HTML  Tag. Available at: https://www.w3schools.com/tags/tag_option.asp (Accessed: 20 April 2026).
+* W3Schools (2026) Java Tutorial. Available at: https://www.w3schools.com/java/ (Accessed: 19 June 2026).
+* Thriving Stylist (2025) Unexpected challenges salon owner’s face. Available at: https://thrivingstylist.com/blog/unexpected-challenges-salon-owners-face/ 
+(Accessed: 5 April 2026)  
+
+
 
   
