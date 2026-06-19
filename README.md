@@ -57,6 +57,33 @@ Objective 2 ensure that all the hair styles’ costs are visible ensuring transp
 | **Week 8** | Responsive Design | • Implement media queries.<br>• Optimize fluid layouts to ensure full responsiveness across tablet and mobile displays. |
 | **Week 9** <br>*(29/05/2026)* | Final Submission | • **Submit Part 2** (Final polished web solution). |
 
+## Part 3 Enhancements
+In part 3 I focused on enhancing functionality with :
+
+## JavaScript Functionality
+*   **Interactive Slideshow:** Implemented a  auto-playing image slideshow on the home page with manual navigation arrows and clickable dots.
+*   **Lightbox Gallery:** Added a dynamic lightbox feature
+*   **AJAX Form Submission:** Integrated asynchronous form submission using the Fetch API for both booking and contact forms,
+*   **Client-Side Validation:** Implemented comprehensive JavaScript validation for form inputs including , and required fields.
+*   **Error Handling:** Added user-friendly error messages and success notifications with smooth animations.
+*   **Service Search Filter:** Added a dynamic search bar on the Services page allowing users to instantly filter hairstyles by name or price.
+*   **Mobile Navigation:** Created a responsive hamburger menu toggle for seamless navigation on mobile devices.
+*   **FAQ Accordion:** Implemented an interactive FAQ section on the contact page with smooth expand/collapse animations.
+
+### Search Engine Optimization (SEO)
+*   **On-Page SEO:** 
+    *   Added comprehensive `<meta>` to all the HTML pages.
+    *   Implemented Open Graph tags for social media sharing.
+    *   Used proper heading hierarchy (H1, H2, H3) throughout all pages.
+*   **Schema Markup:** Added JSON-LD structured data for Local Business (HairSalon) to improve local  added search visibility.
+*   **Image Optimization:** 
+*   **URL Structure:** 
+*   **Mobile-Friendliness:** 
+
+### Off-Page SEO
+*   **Social Media Integration:** Added social media links .
+*   **Local SEO:** Optimized for local search with schema markup, Google Maps integration, and local contact information.
+
 
 
 
