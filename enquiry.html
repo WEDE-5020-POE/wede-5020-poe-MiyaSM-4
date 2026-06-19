@@ -57,31 +57,36 @@
             <p>Ready to experience the luxury of SM Luxury Hair Salon? Book your appointment today and let our expert stylists take care of your hair needs.</p>
         </section>
 
-        <form action="BOOKING-Handler.php" method="POST" id="bookingForm">
+        <!-- booking form made with the intent that it has to blend with the background of the form -->
+        <!-- NEW: Added class="contact-form" so it gets the white background styling -->
+        <form action="BOOKING-Handler.php" method="POST" id="bookingForm" class="contact-form">
             <div class="form-row">
                 <div class="form-group">
                     <label for="Full_Names">Full Names *</label>
-                    <input type="text" id="Full_Names" name="Full_Names" required>
+                    <input type="text" id="Full_Names" name="Full_Names" required autocomplete="name">
                 </div>
                 <div class="form-group">
                     <label for="Email">Email *</label>
-                    <input type="email" id="Email" name="Email" required>
+                    <input type="email" id="Email" name="Email" required autocomplete="email">
                 </div>
             </div>
             
             <div class="form-row">
                 <div class="form-group">
                     <label for="Phone-Number">Phone Number *</label>
-                    <input type="tel" id="Phone-Number" name="Phone-Number" required>
+                    <input type="tel" id="Phone-Number" name="Phone-Number" required autocomplete="tel" pattern="[0-9\s\-\+\(\)]{10,}">
                 </div>
                 <div class="form-group">
                     <label for="Service-type">Service Type *</label>
                     <select id="Service-type" name="Service-type" required>
                         <option value="">-- Select a Service --</option>
                         <option value="haircut">Haircut</option>
-                        <option value="coloring">Hair Coloring</option>
-                        <option value="styling">Hair Styling</option>
-                        <option value="treatment">Hair Treatment</option>
+                        <option value="box-braids">Box Braids</option>
+                        <option value="cornrows">Cornrows</option>
+                        <option value="twists">Twists</option>
+                        <option value="crochet">Crochet Braids</option>
+                        <option value="faux-locs">Faux Locs</option>
+                        <option value="natural-care">Natural Hair Care</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -106,7 +111,7 @@
             
             <div class="form-group">
                 <label for="Notes">Additional Information / Special Requests</label>
-                <textarea id="Notes" name="Notes" rows="4"></textarea>
+                <textarea id="Notes" name="Notes" rows="4" placeholder="Tell us about your preferred hairstyle or any special requirements..."></textarea>
             </div>
             
             <div class="form-submit">
@@ -122,9 +127,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>   
+        <p>&copy; 2026 SM Luxury Hair Salon. All rights reserved.</p>
         <p style="color: #d4af37; font-weight: 600;">📍 057 Qweens Street, Pretoria | 📞 082 974 6593</p>
-        <!-- ADDED: Social Media Links -->
         <div style="margin: 1.5rem 0;">
             <a href="https://facebook.com/smluxuryhair" target="_blank" rel="noopener" style="color: #c0c5d0; margin: 0 10px; font-size: 1rem; text-decoration: none;">📘 Facebook</a>
             <a href="https://instagram.com/smluxurysalon" target="_blank" rel="noopener" style="color: #c0c5d0; margin: 0 10px; font-size: 1rem; text-decoration: none;">📷 Instagram</a>
@@ -132,12 +136,12 @@
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="About.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
-            <a href="enquiry.html" class="current Page">Booking</a>
+            <a href="enquiry.html">Book Now</a>
             <a href="contact.html">Contact</a>
         </nav>
     </footer>
-     <script src="js/styles.js"></script>
+    <script src="js/styles.js"></script>
 </body>
 </html>
